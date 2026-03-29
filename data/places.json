@@ -79,6 +79,39 @@
     "checkin_tip": "กินถ่ายรูปกับอาหารที่สั่ง ทุกอย่างน่าถ่าย!"
   },
   {
+    "name": "Longshan Temple",
+    "name_th": "วัดหลงซาน",
+    "type": "attraction",
+    "day": 1,
+    "image": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=800",
+    "description": "วัดจีนเก่าแก่ สถาปัตยกรรมสวยงาม ใกล้ตลาดหัวชี",
+    "google_maps": "https://maps.app.goo.gl/LongshanTemple",
+    "opening_hours": "06:00-22:00",
+    "restaurants": [
+      {
+        "name": "Wang's Broth",
+        "type": "ข้าวหน้าหมูตุ๋น มิชลิน Bib Gourmand 3 ปีซ้อน",
+        "price": "50-100 THB",
+        "hours": "09:00-20:00 (หยุดอังคาร)",
+        "highlight": "Michelin Bib Gourmand 2019-2022",
+        "google_maps": "https://maps.app.goo.gl/WangsBrothHuaxi"
+      }
+    ],
+    "photo_spots": [
+      {
+        "name": "Main Hall Front",
+        "description": "ถ่ายอาคารวัดสวยๆ",
+        "best_time": "08:00-10:00"
+      },
+      {
+        "name": "Inside Temple",
+        "description": "ถ่ายเพดาน + โคมไฟ",
+        "note": "รักษาความเงียบ"
+      }
+    ],
+    "checkin_tip": "ไหว้พระขอพร แล้วไปกินข้าวหน้าหมูตุ๋นมิชลินที่ Wang's Broth!"
+  },
+  {
     "name": "Jiufen Old Street",
     "name_th": "ถนนเก่าจิ่วเฟิ่น",
     "type": "attraction",
@@ -362,28 +395,5 @@
       }
     ],
     "checkin_tip": "ถ่ายรูปกับกล่องสับปะรดก่อนกลับ! ซื้อของฝากเยอะๆ"
-  },
-  {
-    "name": "Longshan Temple",
-    "name_th": "วัดหลงซาน",
-    "type": "attraction",
-    "day": 1,
-    "image": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=800",
-    "description": "วัดจีนเก่าแก่ สถาปัตยกรรมสวยงาม",
-    "google_maps": "https://maps.app.goo.gl/LongshanTemple",
-    "opening_hours": "06:00-22:00",
-    "photo_spots": [
-      {
-        "name": "Main Hall Front",
-        "description": "ถ่ายอาคารวัดสวยๆ",
-        "best_time": "08:00-10:00"
-      },
-      {
-        "name": "Inside Temple",
-        "description": "ถ่ายเพดาน + โคมไฟ",
-        "note": "รักษาความเงียบ"
-      }
-    ],
-    "checkin_tip": "ไหว้พระขอพร ถ่ายรูปวัดสวยๆ ใกล้ MRT"
   }
 ]
