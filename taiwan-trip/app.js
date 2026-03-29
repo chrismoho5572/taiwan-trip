@@ -3,60 +3,60 @@
 // ข้อมูลแผนทริปแต่ละวัน
 const itinerary = {
     1: {
-        title: "Day 1: Taipei Arrival",
-        subtitle: "มาถึงไทเป ช้อป กิน พักผ่อน",
+        title: "Day 1: เริ่มต้นการผจญภัย 💕",
+        subtitle: "มาถึงไทเป เดินเล่น กิน ถ่ายรูปด้วยกัน",
         activities: [
-            "✈️ เช็คอินโรงแรม (แนะนำ Ximending)",
-            "🚶 เดินเล่น Ximending ถ่ายรูป",
+            "✈️ เช็คอินโรงแรม (Ximending - ใจกลางเมือง)",
+            "🚶 เดินเล่น Ximending ถ่ายรูปคู่กัน",
             "🍜 กินเที่ยงที่ Ay-Chung Flour Rice Noodles",
-            "🛒 ช้อปปิ้งของ",
-            "🌙 เย็นไป Ningxia Night Market"
+            "🛒 ช้อปปิ้งของเล็กๆ น้อยๆ",
+            "🌙 เย็นไป Ningxia Night Market กินของอร่อยด้วยกัน"
         ],
         places: ["Ximending Pedestrian Area", "Ay-Chung Flour Rice Noodles", "Ningxia Night Market"]
     },
     2: {
-        title: "Day 2: Jiufen + Shifen",
-        subtitle: "หมู่บ้านเก่า + ปล่อยโคมไฟ",
+        title: "Day 2: Jiufen + Shifen 🏮",
+        subtitle: "หมู่บ้านเก่า + ปล่อยโคมไฟอธิษฐานด้วยกัน",
         activities: [
             "🚂 รถไฟไป Ruifang (ต่อรถไป Jiufen)",
-            "📷 ถ่ายรูปถนนเก่า Jiufen + โคมไฟ",
-            "🍵 กินชาที่ A-Mei Tea House",
-            "🏮 บ่ายไป Shifen ปล่อยโคมไฟ",
+            "📷 ถ่ายรูปถนนเก่า Jiufen + โคมไฟแดง",
+            "🍵 กินชาที่ A-Mei Tea House ดูวิวทะเล",
+            "🏮 บ่ายไป Shifen ปล่อยโคมไฟอธิษฐานคู่",
             "📸 ถ่ายรูปน้ำตก Shifen Waterfall"
         ],
         places: ["Jiufen Old Street", "Shifen Waterfall", "Shifen Sky Lantern"]
     },
     3: {
-        title: "Day 3: Taipei City",
-        subtitle: "เที่ยวในเมือง + ชมวิว",
+        title: "Day 3: Taipei City 🏙️",
+        subtitle: "เที่ยวในเมือง + ชมวิว + กินติ่มซำ",
         activities: [
             "🏛️ เช้า Chiang Kai-Shek Memorial Hall",
-            "🏙️ สาย Taipei 101 Observatory",
+            "🏙️ สาย Taipei 101 Observatory (ถ่ายรูปคู่)",
             "🥟 เที่ยง Din Tai Fung (จองคิว!)",
-            "⛰️ บ่าย Elephant Mountain ถ่ายรูปเย็น",
+            "⛰️ บ่าย Elephant Mountain ดูพระอาทิตย์ตก",
             "🌙 เย็น Shilin Night Market"
         ],
         places: ["Chiang Kai-Shek Memorial Hall", "Taipei 101 Observatory", "Din Tai Fung Taipei 101", "Elephant Mountain", "Shilin Night Market"]
     },
     4: {
-        title: "Day 4: Day Trip",
-        subtitle: "เลือก 1 จาก 3",
+        title: "Day 4: Day Trip 🌄",
+        subtitle: "เลือก 1 จาก 3 (แล้วแต่อาการ)",
         activities: [
-            "🪨 Option A: Yehliu Geopark (หินประหลาด)",
-            "🚠 Option B: Maokong Gondola + ดื่มชา",
-            "♨️ Option C: Beitou Hot Spring (ออนเซ็น)",
-            "📸 ทั้งหมดถ่ายรูปสวย!"
+            "🪨 Option A: Yehliu Geopark (หินประหลาด ถ่ายรูปสนุก)",
+            "🚠 Option B: Maokong Gondola + ดื่มชาดูวิว",
+            "♨️ Option C: Beitou Hot Spring (ออนเซ็นโรแมนติก)",
+            "💕 ทั้งหมดเหมาะกับคู่รัก!"
         ],
         places: ["Yehliu Geopark", "Maokong Gondola", "Beitou Thermal Valley"]
     },
     5: {
-        title: "Day 5: Shopping + Home",
-        subtitle: "ซื้อของฝาก + กลับบ้าน",
+        title: "Day 5: ซื้อของฝาก + กลับบ้าน 🏠",
+        subtitle: "เตรียมกลับ พร้อมความทรงจำสวยๆ",
         activities: [
-            "🛒 เช้าช้อปปิ้งของฝาก",
-            "🧁 ซื้อ Pineapple Cake ที่ Chia Te",
-            "📦 แพ็คกระเป๋า",
-            "✈️ ไปสนามบิน"
+            "🛒 เช้าช้อปปิ้งของฝากเพื่อน/ครอบครัว",
+            "🧁 ซื้อ Pineapple Cake ที่ Chia Te (อร่อยที่สุด!)",
+            "📦 แพ็คกระเป๋า + รีวิวรูปที่ถ่ายมา",
+            "✈️ ไปสนามบิน Taoyuan → กลับบ้าน"
         ],
         places: ["Chia Te Bakery", "Ximending Pedestrian Area"]
     }

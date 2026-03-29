@@ -61,7 +61,14 @@ body {
 .hero .dates {
     font-size: 1rem;
     opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.hero .love-note {
+    font-size: 0.95rem;
+    opacity: 0.9;
     margin-bottom: 15px;
+    font-style: italic;
 }
 
 .weather-badge {
@@ -77,6 +84,33 @@ body {
 
 .weather-badge .divider {
     opacity: 0.5;
+}
+
+/* Love Intro Section */
+.love-intro {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.love-intro h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.love-intro p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+.love-intro .love-quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    opacity: 1;
+    margin-top: 20px;
 }
 
 /* Day Navigation */
