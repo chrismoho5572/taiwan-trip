@@ -7,599 +7,212 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --coral: #FF6B6B;
-            --cream: #FFF8F0;
-            --gold: #FFB84D;
-            --charcoal: #2D2D2D;
-            --soft-gray: #F5F0EB;
-            --accent: #FF8A5B;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Sarabun', sans-serif;
-            background: var(--cream);
-            color: var(--charcoal);
-            line-height: 1.8;
-            overflow-x: hidden;
-        }
-
-        /* Hero - Full Screen Magazine Cover */
-        .hero {
-            min-height: 100vh;
-            position: relative;
-            background: linear-gradient(135deg, var(--coral) 0%, #FF8E8E 50%, var(--gold) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 40px 20px;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image:
-                radial-gradient(circle at 20% 30%, rgba(255,255,255,0.3) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(255,255,255,0.2) 0%, transparent 50%);
-            pointer-events: none;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 900px;
-            animation: fadeInUp 1.5s ease-out;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .couple-names {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(3rem, 8vw, 6rem);
-            font-weight: 700;
-            color: white;
-            margin-bottom: 20px;
-            line-height: 1.1;
-            text-shadow: 2px 4px 20px rgba(0,0,0,0.15);
-        }
-
-        .couple-names span {
-            display: block;
-        }
-
-        .trip-title {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(1.5rem, 4vw, 2.5rem);
-            color: white;
-            font-weight: 400;
-            margin-bottom: 30px;
-            opacity: 0.95;
-            letter-spacing: 2px;
-        }
-
-        .trip-dates {
-            background: rgba(255,255,255,0.25);
-            backdrop-filter: blur(10px);
-            padding: 15px 40px;
-            border-radius: 50px;
-            display: inline-block;
-            margin-bottom: 30px;
-            border: 2px solid rgba(255,255,255,0.3);
-            animation: fadeInUp 1.5s ease-out 0.3s both;
-        }
-
-        .trip-dates span {
-            font-size: 1.1rem;
-            color: white;
-            font-weight: 600;
-        }
-
-        .countdown-badge {
-            display: inline-block;
-            background: white;
-            color: var(--coral);
-            padding: 12px 30px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1.2rem;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-
-        /* Decorative Elements */
-        .heart-decoration {
-            position: absolute;
-            font-size: 4rem;
-            opacity: 0.2;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .heart-1 { top: 15%; left: 10%; animation-delay: 0s; }
-        .heart-2 { top: 25%; right: 15%; animation-delay: 1s; }
-        .heart-3 { bottom: 20%; left: 20%; animation-delay: 2s; }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(10deg); }
-        }
-
-        /* Section Styling */
-        .section {
-            padding: 80px 20px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            text-align: center;
-            margin-bottom: 60px;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '✈️';
-            display: block;
-            font-size: 2rem;
-            margin-top: 15px;
-        }
-
-        /* Itinerary Grid - Magazine Style */
-        .itinerary-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-
-        .day-card {
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-        }
-
-        .day-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-        }
-
-        .day-header {
-            background: linear-gradient(135deg, var(--coral), var(--gold));
-            padding: 30px;
-            color: white;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .day-number {
-            font-family: 'Playfair Display', serif;
-            font-size: 4rem;
-            font-weight: 700;
-            opacity: 0.2;
-            position: absolute;
-            right: 20px;
-            top: 10px;
-            line-height: 1;
-        }
-
-        .day-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            position: relative;
-            z-index: 2;
-        }
-
-        .day-subtitle {
-            font-size: 0.95rem;
-            opacity: 0.9;
-            margin-top: 5px;
-        }
-
-        .day-body {
-            padding: 25px;
-        }
-
-        .activity-list {
-            list-style: none;
-        }
-
-        .activity-list li {
-            padding: 10px 0;
-            border-bottom: 1px solid var(--soft-gray);
-            font-size: 0.95rem;
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-        }
-
-        .activity-list li:last-child {
-            border-bottom: none;
-        }
-
-        .activity-list li::before {
-            content: '→';
-            color: var(--coral);
-            font-weight: bold;
-        }
-
-        /* Stats Bar */
-        .stats-bar {
-            background: white;
-            padding: 40px 20px;
-            border-top: 1px solid var(--soft-gray);
-            border-bottom: 1px solid var(--soft-gray);
-            margin: 60px 0;
-        }
-
-        .stats-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 40px;
-            text-align: center;
-        }
-
-        .stat-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .stat-number {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--coral);
-            line-height: 1;
-        }
-
-        .stat-label {
-            font-size: 0.95rem;
-            color: #666;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* Budget Section */
-        .budget-section {
-            background: white;
-            padding: 60px 20px;
-            margin: 60px 0;
-        }
-
-        .budget-grid {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .budget-item {
-            background: var(--soft-gray);
-            padding: 25px;
-            border-radius: 15px;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .budget-item:hover {
-            transform: scale(1.05);
-        }
-
-        .budget-icon {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        .budget-amount {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: var(--coral);
-            display: block;
-        }
-
-        .budget-label {
-            font-size: 0.9rem;
-            color: #666;
-            margin-top: 5px;
-        }
-
-        .budget-total {
-            text-align: center;
-            margin-top: 40px;
-            padding: 30px;
-            background: linear-gradient(135deg, var(--coral), var(--gold));
-            color: white;
-            border-radius: 20px;
-            max-width: 400px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .budget-total .amount {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            font-weight: 700;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            text-align: center;
-            padding: 80px 20px;
-            background: linear-gradient(135deg, var(--coral) 0%, #FF8E8E 50%, var(--gold) 100%);
-            color: white;
-        }
-
-        .cta-title {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2rem, 5vw, 3rem);
-            margin-bottom: 20px;
-        }
-
-        .cta-subtitle {
-            font-size: 1.2rem;
-            opacity: 0.95;
-            margin-bottom: 30px;
-        }
-
-        .footer {
-            background: var(--charcoal);
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        .footer p {
-            opacity: 0.8;
-            font-size: 0.95rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .couple-names {
-                font-size: 2.5rem;
-            }
-
-            .itinerary-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Hero Section -->
     <section class="hero">
-        <div class="heart-decoration heart-1">💕</div>
-        <div class="heart-decoration heart-2">💕</div>
-        <div class="heart-decoration heart-3">💕</div>
-
+        <div class="hero-overlay"></div>
         <div class="hero-content">
+            <div class="hearts">
+                <span class="heart">💕</span>
+                <span class="heart">💕</span>
+                <span class="heart">💕</span>
+            </div>
+
             <h1 class="couple-names">
                 <span>คริสต์</span>
-                <span>&</span>
+                <span class="ampersand">&</span>
                 <span>เมย์</span>
             </h1>
+
             <p class="trip-title">การเดินทางไปไต้หวัน</p>
 
             <div class="trip-dates">
-                <span>📅 10-15 เมษายน 2569 | 5 วัน 4 คืน</span>
+                <span>📅 10-15 เมษายน 2569</span>
+                <span class="divider">|</span>
+                <span>5 วัน 4 คืน</span>
             </div>
 
-            <div class="countdown-badge" id="countdown">
+            <div class="countdown" id="countdown">
                 🎉 อีก 12 วัน!
             </div>
+
+            <p class="love-message">
+                สำหรับภรรยาที่น่ารักที่สุดในโลก 💕
+            </p>
         </div>
     </section>
 
-    <!-- Stats Bar -->
-    <div class="stats-bar">
-        <div class="stats-grid">
-            <div class="stat-item">
-                <div class="stat-number">5</div>
-                <div class="stat-label">วัน</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">15</div>
-                <div class="stat-label">สถานที่</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">3</div>
-                <div class="stat-label">Night Markets</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">50K</div>
-                <div class="stat-label">บาท</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">2</div>
-                <div class="stat-label">คน 💕</div>
-            </div>
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stat">
+            <span class="stat-number">5</span>
+            <span class="stat-label">วัน</span>
         </div>
-    </div>
+        <div class="stat">
+            <span class="stat-number">15</span>
+            <span class="stat-label">สถานที่</span>
+        </div>
+        <div class="stat">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Night Markets</span>
+        </div>
+        <div class="stat">
+            <span class="stat-number">50K</span>
+            <span class="stat-label">บาท</span>
+        </div>
+        <div class="stat">
+            <span class="stat-number">2</span>
+            <span class="stat-label">คน 💕</span>
+        </div>
+    </section>
 
     <!-- Itinerary Section -->
-    <section class="section">
-        <h2 class="section-title">แผนการเดินทาง</h2>
+    <section class="itinerary">
+        <h2 class="section-title">✈️ แผนการเดินทาง</h2>
 
-        <div class="itinerary-grid">
+        <div class="day-cards">
             <!-- Day 1 -->
-            <div class="day-card">
+            <article class="day-card">
                 <div class="day-header">
                     <span class="day-number">01</span>
-                    <h3 class="day-title">เริ่มต้นการผจญภัย</h3>
-                    <p class="day-subtitle">มาถึงไทเป เดินเล่น กิน ถ่ายรูปด้วยกัน</p>
+                    <h3>เริ่มต้นการผจญภัย</h3>
+                    <p>มาถึงไทเป เดินเล่น กิน ถ่ายรูปด้วยกัน</p>
                 </div>
                 <div class="day-body">
-                    <ul class="activity-list">
-                        <li>เช็คอินโรงแรม (Ximending)</li>
-                        <li>เดินเล่น Ximending ถ่ายรูปคู่กัน</li>
-                        <li>กินเส้นหมี่แห้วอาจง</li>
-                        <li>เย็น Ningxia Night Market</li>
+                    <ul class="activities">
+                        <li>✈️ เช็คอินโรงแรม (Ximending)</li>
+                        <li>🚶 เดินเล่น Ximending ถ่ายรูปคู่กัน</li>
+                        <li>🍜 กินเส้นหมี่แห้วอาจง</li>
+                        <li>🌙 เย็น Ningxia Night Market</li>
                     </ul>
                 </div>
-            </div>
+            </article>
 
             <!-- Day 2 -->
-            <div class="day-card">
+            <article class="day-card">
                 <div class="day-header">
                     <span class="day-number">02</span>
-                    <h3 class="day-title">จิ่วเฟิ่น + ชิเฟิ่น</h3>
-                    <p class="day-subtitle">หมู่บ้านเก่า + ปล่อยโคมไฟอธิษฐาน</p>
+                    <h3>จิ่วเฟิ่น + ชิเฟิ่น</h3>
+                    <p>หมู่บ้านเก่า + ปล่อยโคมไฟอธิษฐาน</p>
                 </div>
                 <div class="day-body">
-                    <ul class="activity-list">
-                        <li>ถ่ายรูปถนนเก่า Jiufen + โคมไฟแดง</li>
-                        <li>กินชาดูวิวทะเล</li>
-                        <li>ปล่อยโคมไฟอธิษฐานคู่</li>
-                        <li>ถ่ายรูปน้ำตก Shifen</li>
+                    <ul class="activities">
+                        <li>📷 ถ่ายรูปถนนเก่า Jiufen + โคมไฟแดง</li>
+                        <li>🍵 กินชาดูวิวทะเล</li>
+                        <li>🏮 ปล่อยโคมไฟอธิษฐานคู่</li>
+                        <li>📸 ถ่ายรูปน้ำตก Shifen</li>
                     </ul>
                 </div>
-            </div>
+            </article>
 
             <!-- Day 3 -->
-            <div class="day-card">
+            <article class="day-card">
                 <div class="day-header">
                     <span class="day-number">03</span>
-                    <h3 class="day-title">เที่ยวในเมือง</h3>
-                    <p class="day-subtitle">Taipei 101 + กินติ่มซำ + ชมวิว</p>
+                    <h3>เที่ยวในเมือง</h3>
+                    <p>Taipei 101 + กินติ่มซำ + ชมวิว</p>
                 </div>
                 <div class="day-body">
-                    <ul class="activity-list">
-                        <li>Chiang Kai-Shek Memorial Hall</li>
-                        <li>Taipei 101 Observatory</li>
-                        <li>Din Tai Fung (จองคิว!)</li>
-                        <li>Elephant Mountain ดูพระอาทิตย์ตก</li>
-                        <li>Shilin Night Market</li>
+                    <ul class="activities">
+                        <li>🏛️ Chiang Kai-Shek Memorial Hall</li>
+                        <li>🏙️ Taipei 101 Observatory</li>
+                        <li>🥟 Din Tai Fung (จองคิว!)</li>
+                        <li>⛰️ Elephant Mountain ดูพระอาทิตย์ตก</li>
+                        <li>🌙 Shilin Night Market</li>
                     </ul>
                 </div>
-            </div>
+            </article>
 
             <!-- Day 4 -->
-            <div class="day-card">
+            <article class="day-card">
                 <div class="day-header">
                     <span class="day-number">04</span>
-                    <h3 class="day-title">ทริปนอกเมือง</h3>
-                    <p class="day-subtitle">เลือก 1 จาก 3 (แล้วแต่อาการ)</p>
+                    <h3>ทริปนอกเมือง</h3>
+                    <p>เลือก 1 จาก 3 (แล้วแต่อาการ)</p>
                 </div>
                 <div class="day-body">
-                    <ul class="activity-list">
-                        <li>Yehliu Geopark (หินประหลาด)</li>
-                        <li>Maokong Gondola + ดื่มชา</li>
-                        <li>Beitou Hot Spring (ออนเซ็นโรแมนติก)</li>
+                    <ul class="activities">
+                        <li>🪨 Yehliu Geopark (หินประหลาด)</li>
+                        <li>🚠 Maokong Gondola + ดื่มชา</li>
+                        <li>♨️ Beitou Hot Spring (ออนเซ็นโรแมนติก)</li>
                     </ul>
                 </div>
-            </div>
+            </article>
 
             <!-- Day 5 -->
-            <div class="day-card">
+            <article class="day-card">
                 <div class="day-header">
                     <span class="day-number">05</span>
-                    <h3 class="day-title">กลับบ้าน</h3>
-                    <p class="day-subtitle">ซื้อของฝาก + ความทรงจำสวยๆ</p>
+                    <h3>กลับบ้าน</h3>
+                    <p>ซื้อของฝาก + ความทรงจำสวยๆ</p>
                 </div>
                 <div class="day-body">
-                    <ul class="activity-list">
-                        <li>ช้อปปิ้งของฝาก</li>
-                        <li>ซื้อ Pineapple Cake ที่ Chia Te</li>
-                        <li>แพ็คกระเป๋า + รีวิวรูป</li>
-                        <li>ไปสนามบิน → กลับบ้าน 💕</li>
+                    <ul class="activities">
+                        <li>🛒 ช้อปปิ้งของฝาก</li>
+                        <li>🧁 Pineapple Cake ที่ Chia Te</li>
+                        <li>📦 แพ็คกระเป๋า + รีวิวรูป</li>
+                        <li>✈️ ไปสนามบิน → กลับบ้าน 💕</li>
                     </ul>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
     <!-- Budget Section -->
-    <section class="budget-section">
-        <h2 class="section-title">งบประมาณ</h2>
+    <section class="budget">
+        <h2 class="section-title">💰 งบประมาณ 50,000 บาท</h2>
 
         <div class="budget-grid">
             <div class="budget-item">
-                <div class="budget-icon">🏨</div>
-                <span class="budget-amount">12,000</span>
-                <span class="budget-label">ที่พัก 4 คืน</span>
+                <span class="icon">🏨</span>
+                <span class="amount">12,000</span>
+                <span class="label">ที่พัก 4 คืน</span>
             </div>
             <div class="budget-item">
-                <div class="budget-icon">✈️</div>
-                <span class="budget-amount">12,000</span>
-                <span class="budget-label">ตั๋วเครื่องบิน</span>
+                <span class="icon">✈️</span>
+                <span class="amount">12,000</span>
+                <span class="label">ตั๋วเครื่องบิน</span>
             </div>
             <div class="budget-item">
-                <div class="budget-icon">🍜</div>
-                <span class="budget-amount">10,000</span>
-                <span class="budget-label">อาหาร 5 วัน</span>
+                <span class="icon">🍜</span>
+                <span class="amount">10,000</span>
+                <span class="label">อาหาร 5 วัน</span>
             </div>
             <div class="budget-item">
-                <div class="budget-icon">🚇</div>
-                <span class="budget-amount">3,000</span>
-                <span class="budget-label">ขนส่ง</span>
+                <span class="icon">🚇</span>
+                <span class="amount">3,000</span>
+                <span class="label">ขนส่ง</span>
             </div>
             <div class="budget-item">
-                <div class="budget-icon">🎫</div>
-                <span class="budget-amount">3,000</span>
-                <span class="budget-label">บัตรเข้าชม</span>
+                <span class="icon">🎫</span>
+                <span class="amount">3,000</span>
+                <span class="label">บัตรเข้าชม</span>
             </div>
             <div class="budget-item">
-                <div class="budget-icon">🛒</div>
-                <span class="budget-amount">5,000</span>
-                <span class="budget-label">ช้อปปิ้ง</span>
+                <span class="icon">🛒</span>
+                <span class="amount">5,000</span>
+                <span class="label">ช้อปปิ้ง</span>
             </div>
             <div class="budget-item">
-                <div class="budget-icon">💎</div>
-                <span class="budget-amount">5,000</span>
-                <span class="budget-label">Emergency</span>
+                <span class="icon">💎</span>
+                <span class="amount">5,000</span>
+                <span class="label">Emergency</span>
             </div>
         </div>
 
         <div class="budget-total">
-            <p>ยอดรวมทั้งหมด</p>
-            <div class="amount">50,000 บาท</div>
-            <p style="margin-top: 10px; opacity: 0.9;">25,000 บาท/คน 👫</p>
+            <p>ยอดรวม</p>
+            <div class="total-amount">50,000 บาท</div>
+            <p class="per-person">25,000 บาท/คน 👫</p>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
-        <h2 class="cta-title">💕 ทริปในฝันของเรา</h2>
-        <p class="cta-subtitle">"ทุกที่ที่ไป ขอให้มีเธอข้างกาย"</p>
+    <section class="cta">
+        <h2>💕 ทริปในฝันของเรา</h2>
+        <p>"ทุกที่ที่ไป ขอให้มีเธอข้างกาย"</p>
     </section>
 
     <!-- Footer -->
@@ -607,43 +220,6 @@
         <p>สร้างด้วย 💕 โดย Moss | การเดินทางของคริสต์และเมย์ 2569</p>
     </footer>
 
-    <script>
-        // Countdown
-        function updateCountdown() {
-            const tripDate = new Date('2026-04-10T00:00:00');
-            const now = new Date();
-            const diff = tripDate - now;
-
-            if (diff > 0) {
-                const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
-                document.getElementById('countdown').textContent = `🎉 อีก ${days} วัน!`;
-            }
-        }
-
-        updateCountdown();
-        setInterval(updateCountdown, 60000);
-
-        // Animate on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.day-card, .budget-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>

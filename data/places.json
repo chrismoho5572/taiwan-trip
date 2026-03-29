@@ -1,312 +1,100 @@
 [
   {
-    "name": "Ximending Pedestrian Area",
+    "name": "Ximending",
     "name_th": "ถนนคนเดินซีเมนติง",
     "type": "shopping",
-    "area": "Ximending",
-    "hours": {
-      "open": "11:00",
-      "close": "22:00"
-    },
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
-    "description": "ย่านช้อปปิ้งสุดฮิปของไทเป มีร้านค้า ร้านอาหาร และถนนคนเดินที่คึกคัก แนะนำไปช่วงเย็น",
-    "photo_spots": [
-      {
-        "name": "ป้าย Ximending สีแดง",
-        "description": "จุดถ่ายรูปคลาสสิก แนะนำไปช่วงเย็นไฟเปิดสวย ยืนตรงป้ายเซ็ตสีแดง",
-        "image": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=600"
-      },
-      {
-        "name": "ถนนคนเดินยามค่ำคืน",
-        "description": "ไฟนีออนสวย ถ่าย street photography ได้ดี ใช้ wide angle",
-        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"
-      }
-    ]
-  },
-  {
-    "name": "Ay-Chung Flour Rice Noodles",
-    "name_th": "เส้นหมี่แห้วอาจง",
-    "type": "food",
-    "area": "Ximending",
-    "hours": {
-      "open": "09:00",
-      "close": "23:00"
-    },
-    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800",
-    "description": "ร้านเส้นหมี่แห้วต้นตำรับ ต่อคิวยาวแต่รอไม่นาน รสชาติอร่อยมาก",
-    "photo_spots": [
-      {
-        "name": "ถือชามเส้นหมี่",
-        "description": "ถ่ายคู่กับชามเส้นหมี่สีเหลืองสดใส ใช้ natural light",
-        "image": "https://images.unsplash.com/photo-1555126634-323283e090fa?w=600"
-      }
-    ]
+    "day": 1,
+    "must_try": "เส้นหมี่แห้วอาจง"
   },
   {
     "name": "Ningxia Night Market",
     "name_th": "ตลาดกลางคืนหนิงเซี่ย",
     "type": "night_market",
-    "area": "Datong",
-    "hours": {
-      "open": "17:00",
-      "close": "01:00"
-    },
-    "image": "https://images.unsplash.com/photo-1528164344705-47542687000d?w=800",
-    "description": "ตลาดกลางคืนขนาดกะทัดรัด อาหารอร่อย เดินไม่เหนื่อย แนะนำกุ้งม้วน",
-    "photo_spots": [
-      {
-        "name": "ซอยตลาดยามค่ำ",
-        "description": "ไฟร้านอาหารสวย ถ่ายยิงจากปลายซอยให้เห็นความคึกคัก",
-        "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"
-      }
-    ]
+    "day": 1,
+    "must_try": "กุ้งม้วน, สเต็ก"
   },
   {
     "name": "Jiufen Old Street",
     "name_th": "ถนนเก่าจิ่วเฟิ่น",
     "type": "attraction",
-    "area": "Jiufen",
-    "hours": {
-      "open": "09:00",
-      "close": "20:00"
-    },
-    "image": "https://images.unsplash.com/photo-1530321341288-9d0dfb970801?w=800",
-    "description": "หมู่บ้านเก่าบนภูเขา โคมไฟแดงเรียงราย บรรยากาศเหมือน Spirited Away ต้องไป!",
-    "photo_spots": [
-      {
-        "name": "ซอยโคมไฟแดง",
-        "description": "จุดถ่ายรูปสุดคลาสสิก แนะนำไปช่วงเย็น-ค่ำ ไฟสวยที่สุด",
-        "image": "https://images.unsplash.com/photo-1530321341288-9d0dfb970801?w=600"
-      },
-      {
-        "name": "A-Mei Tea House",
-        "description": "ร้านชาเก่าแก่ วิวทะเลสวย ถ่ายรูประเบียงเวลาพระอาทิตย์ตก",
-        "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600"
-      }
-    ]
+    "day": 2,
+    "must_try": "ทาโรบอล, ชาไข่มุก"
   },
   {
     "name": "Shifen Waterfall",
     "name_th": "น้ำตกชิเฟิ่น",
     "type": "attraction",
-    "area": "Shifen",
-    "hours": {
-      "open": "08:00",
-      "close": "17:00"
-    },
-    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800",
-    "description": "น้ำตกที่สวยที่สุดในไทเป ต้องเดินเข้าไปนิดหน่อย ใช้เวลาประมาณ 20 นาที",
-    "photo_spots": [
-      {
-        "name": "สะพานชมน้ำตก",
-        "description": "ยืนบนสะพานถ่ายกับน้ำตกด้านหลัง แนะนำใช้ slow shutter",
-        "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600"
-      }
-    ]
+    "day": 2,
+    "must_try": "ถ่ายรูปสวยๆ"
   },
   {
     "name": "Shifen Sky Lantern",
     "name_th": "ปล่อยโคมไฟสะกดฟ้า",
     "type": "attraction",
-    "area": "Shifen",
-    "hours": {
-      "open": "09:00",
-      "close": "20:00"
-    },
-    "image": "https://images.unsplash.com/photo-1548957175-84f0f9af659e?w=800",
-    "description": "เขียนคำอธิษฐานบนโคมไฟแล้วปล่อยขึ้นฟ้า ประสบการณ์ที่ห้ามพลาด!",
-    "photo_spots": [
-      {
-        "name": "รถไฟกลางซอย + โคมไฟ",
-        "description": "ถ่ายรูปกับรถไฟวิ่งผ่าน และโคมไฟลอยขึ้นฟ้า",
-        "image": "https://images.unsplash.com/photo-1548957175-84f0f9af659e?w=600"
-      },
-      {
-        "name": "ถือโคมไฟก่อนปล่อย",
-        "description": "ถ่ายคู่กับโคมไฟที่เขียนคำอธิษฐานแล้ว มุม low angle",
-        "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600"
-      }
-    ]
+    "day": 2,
+    "must_try": "เขียนคำอธิษฐานคู่"
   },
   {
     "name": "Chiang Kai-Shek Memorial Hall",
     "name_th": "หอระลึกเจียงไคเช็ค",
     "type": "attraction",
-    "area": "Zhongzheng",
-    "hours": {
-      "open": "09:00",
-      "close": "18:00"
-    },
-    "image": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=800",
-    "description": "อนุสรณ์สถานสำคัญ สถาปัตยกรรมจีนโบราณ ลานกว้างใหญ่ เข้าฟรี!",
-    "photo_spots": [
-      {
-        "name": "ลานหน้าอาคาร",
-        "description": "ถ่ายแบบกว้างให้เห็นอาคารทั้งหลัง แนะนำใช้ wide lens",
-        "image": "https://images.unsplash.com/photo-1528164344705-47542687000d?w=600"
-      },
-      {
-        "name": "บันไดขั้นบนสุด",
-        "description": "มุมสูงมองลงมา ถ่ายคนเดิน บรรยากาศ grand",
-        "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600"
-      }
-    ]
+    "day": 3,
+    "must_try": "ถ่ายรูปบันได"
   },
   {
-    "name": "Taipei 101 Observatory",
-    "name_th": "ชมเมือง Taipei 101",
+    "name": "Taipei 101",
+    "name_th": "ตึกไทเป 101",
     "type": "attraction",
-    "area": "Xinyi",
-    "hours": {
-      "open": "10:00",
-      "close": "21:00"
-    },
-    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-    "description": "ตึกที่สูงที่สุดในไทเป ขึ้นไปชมวิวเมือง 360 องศา บัตร 600 TWD",
-    "photo_spots": [
-      {
-        "name": "ชั้น observatory",
-        "description": "ถ่ายวิวเมืองไทเปจากที่สูง แนะนำช่วงพระอาทิตย์ตก",
-        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600"
-      },
-      {
-        "name": "ฐานตึก Taipei 101",
-        "description": "ยืนมองขึ้นไปถ่ายตึกทั้งหลัง มุม low angle สุด",
-        "image": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=600"
-      }
-    ]
+    "day": 3,
+    "must_try": "ขึ้นชมวิว 360°"
   },
   {
-    "name": "Din Tai Fung Taipei 101",
+    "name": "Din Tai Fung",
     "name_th": "ติ่มซำต้นตำรับ",
     "type": "restaurant",
-    "area": "Xinyi",
-    "hours": {
-      "open": "11:00",
-      "close": "21:30"
-    },
-    "image": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=800",
-    "description": "ร้านติ่มซำระดับมิชลิน ต้นตำรับจากไทเป ต้องจองคิวรอ 1-2 ชม.!",
-    "photo_spots": [
-      {
-        "name": "ถือตะเกียบชิ้นใหญ่",
-        "description": "เซ็ตอาหาร Xiao Long Bao สวยๆ ถ่าย top-down",
-        "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600"
-      }
-    ]
+    "day": 3,
+    "must_try": "Xiao Long Bao"
   },
   {
     "name": "Elephant Mountain",
-    "name_th": "เขาช้าง (ถ่ายรูป 101)",
+    "name_th": "เขาช้าง",
     "type": "attraction",
-    "area": "Xinyi",
-    "hours": {
-      "open": "06:00",
-      "close": "22:00"
-    },
-    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-    "description": "ปีนขึ้นเขาเล็กน้อย 30 นาที ถ่ายรูป Taipei 101 กับเมืองได้สวยสุด!",
-    "photo_spots": [
-      {
-        "name": "จุดชมวิวบนเขา",
-        "description": "ถ่าย Taipei 101 ช่วงพระอาทิตย์ตก สวยที่สุด! Golden hour",
-        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600"
-      }
-    ]
+    "day": 3,
+    "must_try": "ดูพระอาทิตย์ตก"
   },
   {
     "name": "Shilin Night Market",
     "name_th": "ตลาดกลางคืนซือหลิน",
     "type": "night_market",
-    "area": "Shilin",
-    "hours": {
-      "open": "16:00",
-      "close": "00:00"
-    },
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800",
-    "description": "ตลาดกลางคืนใหญ่ที่สุดในไทเป อาหารเยอะมาก มีทั้งของกินและของใช้",
-    "photo_spots": [
-      {
-        "name": "ซอยอาหาร",
-        "description": "ถ่ายบรรยากาศคนเยอะ ไฟสวย ใช้ flash หรือ high ISO",
-        "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"
-      }
-    ]
+    "day": 3,
+    "must_try": "ไก่ทอด"
   },
   {
     "name": "Yehliu Geopark",
     "name_th": "อุทยานธรณีเย่หลิว",
     "type": "attraction",
-    "area": "Yehliu",
-    "hours": {
-      "open": "08:00",
-      "close": "17:00"
-    },
-    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-    "description": "หินรูปร่างประหลาดที่เกิดจากธรรมชาติ มี Queen's Head ชื่อดัง บัตร 120 TWD",
-    "photo_spots": [
-      {
-        "name": "Queen's Head Rock",
-        "description": "หินรูปหัวคน ต้องถ่าย! ต่อคิวนิดหน่อย แนะนำไปช่วงเช้า",
-        "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600"
-      }
-    ]
+    "day": 4,
+    "must_try": "ถ่ายรูป Queen's Head"
   },
   {
     "name": "Maokong Gondola",
     "name_th": "กระเช้าเหมาคง",
     "type": "attraction",
-    "area": "Wenshan",
-    "hours": {
-      "open": "09:00",
-      "close": "21:00"
-    },
-    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-    "description": "นั่งกระเช้าชมวิวเมืองไทเป ไปดื่มชาบนภูเขา บรรยากาศดีมาก",
-    "photo_spots": [
-      {
-        "name": "ในกระเช้า",
-        "description": "ถ่ายวิวเมืองจากในกระเช้า มุม wide ให้เห็น cable",
-        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600"
-      }
-    ]
+    "day": 4,
+    "must_try": "ดื่มชาดูวิว"
   },
   {
-    "name": "Beitou Thermal Valley",
-    "name_th": "หุบเขาน้ำพุร้อนเป่ยโถว",
+    "name": "Beitou Hot Spring",
+    "name_th": "น้ำพุร้อนเป่ยโถว",
     "type": "attraction",
-    "area": "Beitou",
-    "hours": {
-      "open": "09:00",
-      "close": "17:00"
-    },
-    "image": "https://images.unsplash.com/photo-1540539234-c14a20fb7c7b?w=800",
-    "description": "น้ำพุร้อนธรรมชาติ น้ำสีเขียวมรกต บรรยากาศสงบ เข้าฟรี!",
-    "photo_spots": [
-      {
-        "name": "ริมหุบเขาน้ำร้อน",
-        "description": "ถ่ายควันน้ำร้อนลอยขึ้น ใช้ backlit สวย",
-        "image": "https://images.unsplash.com/photo-1540539234-c14a20fb7c7b?w=600"
-      }
-    ]
+    "day": 4,
+    "must_try": "ออนเซ็นโรแมนติก"
   },
   {
     "name": "Chia Te Bakery",
-    "name_th": "เบเกอรี่เจียเต๋อ (สับปะรด)",
+    "name_th": "เบเกอรี่เจียเต๋อ",
     "type": "shopping",
-    "area": "Daan",
-    "hours": {
-      "open": "08:00",
-      "close": "21:00"
-    },
-    "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=800",
-    "description": "ขนมสับปะรดอร่อยที่สุดในไทเป ฝากเพื่อนเลย กล่องละ 300-400 TWD",
-    "photo_spots": [
-      {
-        "name": "กล่องขนมสับปะรด",
-        "description": "ถ่ายกับกล่องสวยๆ ที่ร้าน แสงธรรมชาติดี",
-        "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600"
-      }
-    ]
+    "day": 5,
+    "must_try": "Pineapple Cake"
   }
 ]
