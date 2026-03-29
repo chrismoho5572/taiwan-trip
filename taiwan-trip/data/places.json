@@ -1,0 +1,197 @@
+[
+  {
+    "name": "Ximending Pedestrian Area",
+    "name_th": "ถนนคนเดินซีเมนติง",
+    "type": "shopping",
+    "area": "Ximending",
+    "hours": {
+      "open": "11:00",
+      "close": "22:00",
+      "note": "ร้านบางร้านเปิดด่วนกว่า"
+    },
+    "lat": 25.0424,
+    "lng": 121.5085
+  },
+  {
+    "name": "Ay-Chung Flour Rice Noodles",
+    "name_th": "เส้นหมี่แห้วอาจง",
+    "type": "food",
+    "area": "Ximending",
+    "hours": {
+      "open": "09:00",
+      "close": "23:00",
+      "note": "เปิดทุกวัน"
+    },
+    "lat": 25.0423,
+    "lng": 121.5079
+  },
+  {
+    "name": "Ningxia Night Market",
+    "name_th": "ตลาดกลางคืนหนิงเซี่ย",
+    "type": "night_market",
+    "area": "Datong",
+    "hours": {
+      "open": "17:00",
+      "close": "01:00",
+      "note": "เปิดทุกวัน"
+    },
+    "lat": 25.0543,
+    "lng": 121.5175
+  },
+  {
+    "name": "Jiufen Old Street",
+    "name_th": "ถนนเก่าจิ่วเฟิ่น",
+    "type": "attraction",
+    "area": "Jiufen",
+    "hours": {
+      "open": "09:00",
+      "close": "20:00",
+      "note": "ร้านบางร้านปิดเร็วกว่า"
+    },
+    "lat": 25.1096,
+    "lng": 121.8447
+  },
+  {
+    "name": "Shifen Waterfall",
+    "name_th": "น้ำตกชิเฟิ่น",
+    "type": "attraction",
+    "area": "Shifen",
+    "hours": {
+      "open": "08:00",
+      "close": "17:00",
+      "note": "เปิดทุกวัน"
+    },
+    "lat": 25.0486,
+    "lng": 121.7823
+  },
+  {
+    "name": "Shifen Sky Lantern",
+    "name_th": "ปล่อยโคมไฟสะกดฟ้า",
+    "type": "attraction",
+    "area": "Shifen",
+    "hours": {
+      "open": "09:00",
+      "close": "20:00",
+      "note": "แนะนำไปก่อนเย็น"
+    },
+    "lat": 25.0478,
+    "lng": 121.7821
+  },
+  {
+    "name": "Chiang Kai-Shek Memorial Hall",
+    "name_th": "หอระลึกเจียงไคเช็ค",
+    "type": "attraction",
+    "area": "Zhongzheng",
+    "hours": {
+      "open": "09:00",
+      "close": "18:00",
+      "note": "เปิดทุกวัน ฟรี"
+    },
+    "lat": 25.0361,
+    "lng": 121.5189
+  },
+  {
+    "name": "Taipei 101 Observatory",
+    "name_th": "ชมเมือง Taipei 101",
+    "type": "attraction",
+    "area": "Xinyi",
+    "hours": {
+      "open": "10:00",
+      "close": "21:00",
+      "note": "บัตร 600 TWD"
+    },
+    "lat": 25.0340,
+    "lng": 121.5645
+  },
+  {
+    "name": "Din Tai Fung Taipei 101",
+    "name_th": "ติ่มซำต้นตำรับ",
+    "type": "restaurant",
+    "area": "Xinyi",
+    "hours": {
+      "open": "11:00",
+      "close": "21:30",
+      "note": "ต้องจองคิว! รอ 1-2 ชม."
+    },
+    "lat": 25.0340,
+    "lng": 121.5645
+  },
+  {
+    "name": "Elephant Mountain",
+    "name_th": "เขาช้าง (ถ่ายรูป 101)",
+    "type": "attraction",
+    "area": "Xinyi",
+    "hours": {
+      "open": "06:00",
+      "close": "22:00",
+      "note": "แนะนำไปช่วงพระอาทิตย์ตก"
+    },
+    "lat": 25.0241,
+    "lng": 121.5678
+  },
+  {
+    "name": "Shilin Night Market",
+    "name_th": "ตลาดกลางคืนซือหลิน",
+    "type": "night_market",
+    "area": "Shilin",
+    "hours": {
+      "open": "16:00",
+      "close": "00:00",
+      "note": "ใหญ่ที่สุดในไทเป"
+    },
+    "lat": 25.0867,
+    "lng": 121.5241
+  },
+  {
+    "name": "Yehliu Geopark",
+    "name_th": "อุทยานธรณีเย่หลิว",
+    "type": "attraction",
+    "area": "Yehliu",
+    "hours": {
+      "open": "08:00",
+      "close": "17:00",
+      "note": "บัตร 120 TWD"
+    },
+    "lat": 25.2080,
+    "lng": 121.6981
+  },
+  {
+    "name": "Maokong Gondola",
+    "name_th": "กระเช้าเหมาคง",
+    "type": "attraction",
+    "area": "Wenshan",
+    "hours": {
+      "open": "09:00",
+      "close": "21:00",
+      "note": "จันทร์ปิดบำรุง"
+    },
+    "lat": 24.9826,
+    "lng": 121.5783
+  },
+  {
+    "name": "Beitou Thermal Valley",
+    "name_th": "หุบเขาน้ำพุร้อนเป่ยโถว",
+    "type": "attraction",
+    "area": "Beitou",
+    "hours": {
+      "open": "09:00",
+      "close": "17:00",
+      "note": "ฟรี"
+    },
+    "lat": 25.1357,
+    "lng": 121.5038
+  },
+  {
+    "name": "Chia Te Bakery",
+    "name_th": "เบเกอรี่เจียเต๋อ (สับปะรด)",
+    "type": "shopping",
+    "area": "Daan",
+    "hours": {
+      "open": "08:00",
+      "close": "21:00",
+      "note": "ขนมสับปะรดอร่อยที่สุด"
+    },
+    "lat": 25.0401,
+    "lng": 121.5432
+  }
+]
