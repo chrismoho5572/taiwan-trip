@@ -193,6 +193,133 @@ body {
     letter-spacing: 1px;
 }
 
+/* ========== FLIGHT SECTION ========== */
+.flight {
+    padding: 80px 20px;
+    background: white;
+}
+
+.flight-cards {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.flight-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    border: 2px solid var(--soft-gray);
+}
+
+.flight-card.return {
+    border-color: var(--coral);
+}
+
+.flight-header {
+    background: var(--soft-gray);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flight-card.return .flight-header {
+    background: linear-gradient(135deg, var(--coral), var(--gold));
+    color: white;
+}
+
+.flight-label {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.flight-airline {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.flight-body {
+    padding: 25px;
+}
+
+.flight-route {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed var(--soft-gray);
+}
+
+.airport {
+    text-align: center;
+}
+
+.airport .code {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--coral);
+    display: block;
+    line-height: 1;
+}
+
+.airport .city {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: var(--coral);
+    opacity: 0.3;
+}
+
+.flight-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.detail .label {
+    font-size: 0.8rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.detail .value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--charcoal);
+}
+
+.night-flight,
+.morning-flight {
+    grid-column: 1 / -1;
+    background: var(--soft-gray);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.night-flight .value,
+.morning-flight .value {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #666;
+}
+
 /* ========== ITINERARY SECTION ========== */
 .itinerary {
     padding: 80px 20px;
