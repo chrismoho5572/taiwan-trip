@@ -137,6 +137,98 @@ body {
     opacity: 0.8;
 }
 
+/* Budget Section */
+.budget-section {
+    padding: 40px 20px;
+    background: white;
+    margin-bottom: 30px;
+}
+
+.budget-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.budget-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+}
+
+.budget-item {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+        "icon name"
+        "amount note";
+    grid-template-columns: 40px 1fr;
+    gap: 5px;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.budget-item:hover {
+    transform: translateY(-3px);
+}
+
+.budget-icon {
+    grid-area: icon;
+    font-size: 1.8rem;
+}
+
+.budget-name {
+    grid-area: name;
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.budget-amount {
+    grid-area: amount;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #667eea;
+}
+
+.budget-note {
+    grid-area: note;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.budget-total {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.total-amount {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.per-person {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    background: rgba(255,255,255,0.2);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
 /* Checklist Section */
 .checklist-section {
     padding: 40px 20px;
