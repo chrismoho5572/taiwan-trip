@@ -1,5 +1,54 @@
 // 🌿 การเดินทางของคริสต์และเมย์ - App Logic
 
+// ========== PLACES DATA ==========
+let placesData = [];
+
+async function loadPlaces() {
+    try {
+        const response = await fetch('data/places.json');
+        placesData = await response.json();
+        renderPlaces();
+    } catch (error) {
+        console.error('โหลดข้อมูลสถานที่ไม่สำเร็จ:', error);
+    }
+}
+
+function renderPlaces() {
+    const container = document.getElementById('places-grid');
+    if (!container) return;
+
+    container.innerHTML = placesData.map(place => `
+        <div class="place-card" data-day="${place.day}">
+            <div class="place-image">
+                <img src="${place.image}" alt="${place.name}" loading="lazy">
+                <span class="place-day-badge">Day ${place.day}</span>
+            </div>
+            <div class="place-content">
+                <h3 class="place-name">${place.name}</h3>
+                <p class="place-name-th">${place.name_th}</p>
+                <p class="place-desc">${place.description}</p>
+
+                <div class="photo-spots">
+                    <h4>📸 Photo Spots</h4>
+                    ${place.photo_spots.map(spot => `
+                        <div class="photo-spot">
+                            <img src="${spot.image}" alt="${spot.name}">
+                            <div class="spot-info">
+                                <span class="spot-name">${spot.name}</span>
+                                <span class="spot-tip">${spot.description}</span>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+
+                <div class="checkin-tip">
+                    💡 ${place.checkin_tip}
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
+
 // ========== COUNTDOWN ==========
 function updateCountdown() {
     const tripDate = new Date('2026-04-10T00:00:00');
@@ -14,7 +63,6 @@ function updateCountdown() {
             countdownEl.textContent = `🎉 อีก ${days} วัน!`;
         }
     } else {
-        // ถ้าถึงวันแล้ว
         const countdownEl = document.getElementById('countdown');
         if (countdownEl) {
             countdownEl.textContent = `🎉 ถึงวันแล้ว!`;
@@ -39,7 +87,7 @@ function initScrollAnimations() {
     }, observerOptions);
 
     // Animate cards
-    document.querySelectorAll('.day-card, .budget-item, .stat').forEach(el => {
+    document.querySelectorAll('.day-card, .budget-item, .stat, .place-card').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -49,10 +97,11 @@ function initScrollAnimations() {
 
 // ========== INITIALIZE ==========
 document.addEventListener('DOMContentLoaded', () => {
+    loadPlaces();
     updateCountdown();
-    setInterval(updateCountdown, 60000); // Update every minute
+    setInterval(updateCountdown, 60000);
 
-    initScrollAnimations();
+    setTimeout(initScrollAnimations, 100);
 
     console.log('💕 การเดินทางของคริสต์และเมย์');
 });

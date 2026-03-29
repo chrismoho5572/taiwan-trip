@@ -4,97 +4,248 @@
     "name_th": "ถนนคนเดินซีเมนติง",
     "type": "shopping",
     "day": 1,
-    "must_try": "เส้นหมี่แห้วอาจง"
+    "image": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=800",
+    "description": "ย่านช้อปปิ้งสุดฮิปของไทเป ถนนคนเดินที่คึกคัก",
+    "photo_spots": [
+      {
+        "name": "ป้าย Ximending สีแดง",
+        "description": "จุดถ่ายรูปคลาสสิก แนะนำไปช่วงเย็นไฟเปิด",
+        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600"
+      },
+      {
+        "name": "Rainbow Crossing",
+        "description": "ทางม้าลายสีรุ้ง ถ่ายจากมุมสูง",
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"
+      }
+    ],
+    "checkin_tip": "ถ่ายคู่กับป้าย Ximending เป็น check-in point แรกของทริป!"
   },
   {
     "name": "Ningxia Night Market",
     "name_th": "ตลาดกลางคืนหนิงเซี่ย",
     "type": "night_market",
     "day": 1,
-    "must_try": "กุ้งม้วน, สเต็ก"
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800",
+    "description": "ตลาดกลางคืนขนาดกะทัดรัด อาหารอร่อย เดินไม่เหนื่อย",
+    "photo_spots": [
+      {
+        "name": "ซอยตลาดยามค่ำ",
+        "description": "ไฟร้านอาหารสวย ถ่ายยิงจากปลายซอย",
+        "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"
+      }
+    ],
+    "checkin_tip": "กินถ่ายรูปกับอาหารที่สั่ง ทุกอย่างน่าถ่าย!"
   },
   {
     "name": "Jiufen Old Street",
     "name_th": "ถนนเก่าจิ่วเฟิ่น",
     "type": "attraction",
     "day": 2,
-    "must_try": "ทาโรบอล, ชาไข่มุก"
+    "image": "https://images.unsplash.com/photo-1530321341288-9d0dfb970801?w=800",
+    "description": "หมู่บ้านเก่าบนภูเขา โคมไฟแดงเรียงราย บรรยากาศ Spirited Away",
+    "photo_spots": [
+      {
+        "name": "ซอยโคมไฟแดง",
+        "description": "จุดถ่ายรูปสุดคลาสสิก แนะนำไปช่วงเย็น-ค่ำ",
+        "image": "https://images.unsplash.com/photo-1530321341288-9d0dfb970801?w=600"
+      },
+      {
+        "name": "A-Mei Tea House",
+        "description": "ร้านชาเก่าแก่ วิวทะเลสวย ถ่ายรูประเบียง",
+        "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600"
+      }
+    ],
+    "checkin_tip": "ถ่ายคู่กับโคมไฟแดง ถือขนมหวานด้วยน่ารัก!"
   },
   {
     "name": "Shifen Waterfall",
     "name_th": "น้ำตกชิเฟิ่น",
     "type": "attraction",
     "day": 2,
-    "must_try": "ถ่ายรูปสวยๆ"
+    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800",
+    "description": "น้ำตกที่สวยที่สุดในไทเป",
+    "photo_spots": [
+      {
+        "name": "สะพานชมน้ำตก",
+        "description": "ยืนบนสะพานถ่ายกับน้ำตกด้านหลัง",
+        "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600"
+      }
+    ],
+    "checkin_tip": "น้ำตกเป็น background สวยมาก!"
   },
   {
     "name": "Shifen Sky Lantern",
     "name_th": "ปล่อยโคมไฟสะกดฟ้า",
     "type": "attraction",
     "day": 2,
-    "must_try": "เขียนคำอธิษฐานคู่"
+    "image": "https://images.unsplash.com/photo-1548957175-84f0f9af659e?w=800",
+    "description": "เขียนคำอธิษฐานแล้วปล่อยขึ้นฟ้า",
+    "photo_spots": [
+      {
+        "name": "รถไฟกลางซอย + โคมไฟ",
+        "description": "ถ่ายรูปกับรถไฟวิ่งผ่าน และโคมไฟลอยขึ้นฟ้า",
+        "image": "https://images.unsplash.com/photo-1548957175-84f0f9af659e?w=600"
+      },
+      {
+        "name": "ถือโคมไฟก่อนปล่อย",
+        "description": "ถ่ายคู่กับโคมไฟที่เขียนคำอธิษฐานแล้ว",
+        "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600"
+      }
+    ],
+    "checkin_tip": "ปล่อยโคมไฟคู่กัน เขียนชื่อ 2 คน!"
   },
   {
     "name": "Chiang Kai-Shek Memorial Hall",
     "name_th": "หอระลึกเจียงไคเช็ค",
     "type": "attraction",
     "day": 3,
-    "must_try": "ถ่ายรูปบันได"
+    "image": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=800",
+    "description": "อนุสรณ์สถานสำคัญ สถาปัตยกรรมจีนโบราณ",
+    "photo_spots": [
+      {
+        "name": "ลานหน้าอาคาร",
+        "description": "ถ่ายแบบกว้างให้เห็นอาคารทั้งหลัง",
+        "image": "https://images.unsplash.com/photo-1528164344705-47542687000d?w=600"
+      },
+      {
+        "name": "บันไดขั้นบนสุด",
+        "description": "มุมสูงมองลงมา",
+        "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600"
+      }
+    ],
+    "checkin_tip": "นั่งบนบันไดถ่ายคู่ ดูเหมือนหนัง!"
   },
   {
     "name": "Taipei 101",
     "name_th": "ตึกไทเป 101",
     "type": "attraction",
     "day": 3,
-    "must_try": "ขึ้นชมวิว 360°"
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+    "description": "ตึกที่สูงที่สุดในไทเป ชมวิว 360°",
+    "photo_spots": [
+      {
+        "name": "ฐานตึกมุมต่ำ",
+        "description": "ยืนมองขึ้นไป ใช้ wide angle",
+        "image": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=600"
+      },
+      {
+        "name": "ชั้น Observatory",
+        "description": "ชมวิวเมืองจากที่สูง",
+        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600"
+      }
+    ],
+    "checkin_tip": "ถ่ายคู่กับ Taipei 101 จากด้านล่าง!"
   },
   {
     "name": "Din Tai Fung",
     "name_th": "ติ่มซำต้นตำรับ",
     "type": "restaurant",
     "day": 3,
-    "must_try": "Xiao Long Bao"
+    "image": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=800",
+    "description": "ร้านติ่มซำระดับมิชลิน ต้องจองคิว!",
+    "photo_spots": [
+      {
+        "name": "เซ็ตอาหาร",
+        "description": "ถ่าย top-down Xiao Long Bao",
+        "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600"
+      }
+    ],
+    "checkin_tip": "ถ่ายรูปกับ Xiao Long Bao ตะเกียบคู่!"
   },
   {
     "name": "Elephant Mountain",
     "name_th": "เขาช้าง",
     "type": "attraction",
     "day": 3,
-    "must_try": "ดูพระอาทิตย์ตก"
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+    "description": "ปีนขึ้นเขาเล็กน้อย ถ่ายรูป Taipei 101 กับเมืองได้สวยสุด",
+    "photo_spots": [
+      {
+        "name": "จุดชมวิวบนเขา",
+        "description": "ถ่าย Taipei 101 ช่วงพระอาทิตย์ตก",
+        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600"
+      }
+    ],
+    "checkin_tip": "ถ่ายคู่กับ Taipei 101 ด้านหลัง ช่วง golden hour!"
   },
   {
     "name": "Shilin Night Market",
     "name_th": "ตลาดกลางคืนซือหลิน",
     "type": "night_market",
     "day": 3,
-    "must_try": "ไก่ทอด"
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800",
+    "description": "ตลาดกลางคืนใหญ่ที่สุดในไทเป",
+    "photo_spots": [
+      {
+        "name": "ซอยอาหาร",
+        "description": "ถ่ายบรรยากาศคนเยอะ",
+        "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"
+      }
+    ],
+    "checkin_tip": "ถ่ายรูปกับไก่ทอดยักษ์!"
   },
   {
     "name": "Yehliu Geopark",
     "name_th": "อุทยานธรณีเย่หลิว",
     "type": "attraction",
     "day": 4,
-    "must_try": "ถ่ายรูป Queen's Head"
+    "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800",
+    "description": "หินรูปร่างประหลาดจากธรรมชาติ",
+    "photo_spots": [
+      {
+        "name": "Queen's Head Rock",
+        "description": "หินรูปหัวคน ต้องถ่าย!",
+        "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600"
+      }
+    ],
+    "checkin_tip": "ถ่ายคู่กับ Queen's Head ต่อคิวนิดหน่อย"
   },
   {
     "name": "Maokong Gondola",
     "name_th": "กระเช้าเหมาคง",
     "type": "attraction",
     "day": 4,
-    "must_try": "ดื่มชาดูวิว"
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+    "description": "นั่งกระเช้าชมวิวเมืองไทเป",
+    "photo_spots": [
+      {
+        "name": "ในกระเช้า",
+        "description": "ถ่ายวิวเมืองจากในกระเช้า",
+        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600"
+      }
+    ],
+    "checkin_tip": "ถ่ายคู่กับวิวเมืองด้านหลัง!"
   },
   {
     "name": "Beitou Hot Spring",
     "name_th": "น้ำพุร้อนเป่ยโถว",
     "type": "attraction",
     "day": 4,
-    "must_try": "ออนเซ็นโรแมนติก"
+    "image": "https://images.unsplash.com/photo-1540539234-c14a20fb7c7b?w=800",
+    "description": "ออนเซ็นโรแมนติก",
+    "photo_spots": [
+      {
+        "name": "Thermal Valley",
+        "description": "ถ่ายควันน้ำร้อน",
+        "image": "https://images.unsplash.com/photo-1540539234-c14a20fb7c7b?w=600"
+      }
+    ],
+    "checkin_tip": "ถ่ายรูปหน้าออนเซ็น!"
   },
   {
     "name": "Chia Te Bakery",
     "name_th": "เบเกอรี่เจียเต๋อ",
     "type": "shopping",
     "day": 5,
-    "must_try": "Pineapple Cake"
+    "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=800",
+    "description": "ขนมสับปะรดอร่อยที่สุด",
+    "photo_spots": [
+      {
+        "name": "กล่องขนมสับปะรด",
+        "description": "ถ่ายกับกล่องสวยๆ",
+        "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600"
+      }
+    ],
+    "checkin_tip": "ถ่ายรูปกับกล่องสับปะรดก่อนกลับ!"
   }
 ]
