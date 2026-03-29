@@ -490,7 +490,8 @@ body {
 }
 
 .night-flight,
-.morning-flight {
+.morning-flight,
+.afternoon-flight {
     grid-column: 1 / -1;
     background: var(--soft-gray);
     padding: 10px;
@@ -498,7 +499,8 @@ body {
 }
 
 .night-flight .value,
-.morning-flight .value {
+.morning-flight .value,
+.afternoon-flight .value {
     font-size: 0.95rem;
     font-weight: 400;
     color: #666;
