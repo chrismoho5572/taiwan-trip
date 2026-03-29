@@ -28,18 +28,56 @@ function renderPlaces() {
                 <p class="place-name-th">${place.name_th}</p>
                 <p class="place-desc">${place.description}</p>
 
+                ${place.google_maps ? `
+                <div class="place-info">
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <a href="${place.google_maps}" target="_blank" class="info-link">Google Maps</a>
+                    </div>
+                    ${place.opening_hours ? `
+                    <div class="info-item">
+                        <span class="info-icon">⏰</span>
+                        <span class="info-text">${place.opening_hours}</span>
+                    </div>
+                    ` : ''}
+                    ${place.price ? `
+                    <div class="info-item">
+                        <span class="info-icon">💰</span>
+                        <span class="info-text">${place.price}</span>
+                    </div>
+                    ` : ''}
+                </div>
+                ` : ''}
+
+                ${place.restaurants ? `
+                <div class="place-restaurants">
+                    <h4>🍴 Recommended</h4>
+                    ${place.restaurants.map(r => `
+                        <div class="restaurant-item">
+                            <span class="restaurant-name">${r.name}</span>
+                            <span class="restaurant-type">${r.type}</span>
+                            ${r.price ? `<span class="restaurant-price">${r.price}</span>` : ''}
+                        </div>
+                    `).join('')}
+                </div>
+                ` : ''}
+
+                ${place.photo_spots ? `
                 <div class="photo-spots">
                     <h4>📸 Photo Spots</h4>
                     ${place.photo_spots.map(spot => `
                         <div class="photo-spot">
-                            <img src="${spot.image}" alt="${spot.name}">
                             <div class="spot-info">
                                 <span class="spot-name">${spot.name}</span>
                                 <span class="spot-tip">${spot.description}</span>
+                                ${spot.best_time ? `<span class="spot-time">🕐 ${spot.best_time}</span>` : ''}
+                                ${spot.hours ? `<span class="spot-hours">⏰ ${spot.hours}</span>` : ''}
+                                ${spot.tip ? `<span class="spot-extra">💡 ${spot.tip}</span>` : ''}
                             </div>
                         </div>
                     `).join('')}
                 </div>
+                ` : ''}
 
                 <div class="checkin-tip">
                     💡 ${place.checkin_tip}

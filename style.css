@@ -801,6 +801,97 @@ body {
     text-align: center;
 }
 
+/* Info Section */
+.place-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+}
+
+.info-icon {
+    font-size: 1rem;
+}
+
+.info-link {
+    color: var(--coral);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.info-text {
+    color: #666;
+}
+
+/* Restaurant Section */
+.place-restaurants {
+    background: var(--soft-gray);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.place-restaurants h4 {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    color: var(--charcoal);
+}
+
+.restaurant-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.restaurant-item:last-child {
+    border-bottom: none;
+}
+
+.restaurant-name {
+    font-weight: 600;
+    color: var(--charcoal);
+    flex: 1;
+}
+
+.restaurant-type {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0 10px;
+}
+
+.restaurant-price {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--coral);
+}
+
+/* Enhanced Photo Spots */
+.photo-spot {
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border-left: 3px solid var(--coral);
+}
+
+.spot-time,
+.spot-hours,
+.spot-extra {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 4px;
+}
+
 /* ========== CTA SECTION ========== */
 .cta {
     text-align: center;
