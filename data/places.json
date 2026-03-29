@@ -41,18 +41,18 @@
     "name_th": "ถนนเก่าจิ่วเฟิ่น",
     "type": "attraction",
     "day": 2,
-    "image": "https://images.unsplash.com/photo-1530321341288-9d0dfb970801?w=800",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
     "description": "หมู่บ้านเก่าบนภูเขา โคมไฟแดงเรียงราย บรรยากาศ Spirited Away",
     "photo_spots": [
       {
         "name": "ซอยโคมไฟแดง",
         "description": "จุดถ่ายรูปสุดคลาสสิก แนะนำไปช่วงเย็น-ค่ำ",
-        "image": "https://images.unsplash.com/photo-1530321341288-9d0dfb970801?w=600"
+        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600"
       },
       {
         "name": "A-Mei Tea House",
         "description": "ร้านชาเก่าแก่ วิวทะเลสวย ถ่ายรูประเบียง",
-        "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600"
+        "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600"
       }
     ],
     "checkin_tip": "ถ่ายคู่กับโคมไฟแดง ถือขนมหวานด้วยน่ารัก!"
