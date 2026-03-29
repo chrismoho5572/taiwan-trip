@@ -10,10 +10,33 @@
     "opening_hours": "24/7 (ร้าน 11:00-22:00)",
     "restaurants": [
       {
+        "name": "Golden Flower Charcoal Toast",
+        "type": "อาหารเช้า ขนมปังปิ้งถ่าน",
+        "price": "50-100 THB",
+        "hours": "06:00-13:30",
+        "highlight": "อันดับ 1 ในใจคนท้องถิ่น",
+        "google_maps": "https://maps.app.goo.gl/GoldenFlowerToast"
+      },
+      {
         "name": "Ay-Chung Flour Rice Noodles",
         "type": "ขนมจีนเส้นหมู",
         "price": "50-100 THB",
         "hours": "09:00-23:00"
+      },
+      {
+        "name": "Ma Spicy Hot Pot",
+        "type": "บุฟเฟ่ต์หม้อไฟเผ็ด",
+        "price": "800+ THB (ทานไม่อั้น)",
+        "hours": "11:30-22:00",
+        "highlight": "Häagen-Dazs ทานไม่อั้น!",
+        "google_maps": "https://maps.app.goo.gl/MaSpicyHotPot"
+      },
+      {
+        "name": "MWD Breakfast",
+        "type": "อาหารเช้าสมัยใหม่",
+        "price": "100-150 THB",
+        "hours": "06:00-14:00",
+        "highlight": "สะอาด ราคาไม่แพง"
       }
     ],
     "photo_spots": [
