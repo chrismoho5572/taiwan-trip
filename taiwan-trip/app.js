@@ -88,7 +88,7 @@ function updateCountdown() {
         const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
         const countdownEl = document.getElementById('countdown');
         if (countdownEl) {
-            countdownEl.textContent = `🎉 อีก ${days} วัน!`;
+            countdownEl.textContent = `${days}`;
         }
     }
 }
