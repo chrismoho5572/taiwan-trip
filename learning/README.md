@@ -15,15 +15,33 @@ learning/
 
 ## Current Progress
 
-- [ ] Python Basics - Lesson 1: Variables ✅ (in progress)
-- [ ] Python Basics - Lesson 2: Operations
-- [ ] Python Basics - Lesson 3: Conditions
-- [ ] Python Basics - Lesson 4: Loops
-- [ ] Python Basics - Lesson 5: Functions
+### Python Basics
+- [x] Lesson 1: Variables & Types ✅
+- [x] Lesson 2: Operations (บวก ลบ คูณ หาร) ✅
+- [x] f-string (แทรก variable ในข้อความ) ✅
+- [ ] Lesson 3: Conditions (if/else) - พักไว้
+- [ ] Lesson 4: Loops (for/while)
+- [ ] Lesson 5: Functions
+
+### Real Projects
+- [x] **Taiwan Trip Website** ✅
+  - HTML/CSS/JavaScript
+  - JSON data
+  - Real-time status
+  - Modal UI
+  - Deploy Cloudflare Pages
 
 ## Goal
 
 เรียน Python → ทำ AI/ML → เขียน Trading Bot
+
+---
+
+## Projects Completed
+
+| Project | Skills Learned | Status |
+|---------|----------------|--------|
+| Taiwan Trip Website | HTML, CSS, JS, JSON, API, Cloudflare | ✅ Done |
 
 ---
 
