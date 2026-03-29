@@ -71,10 +71,27 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadPlaces();
     showDay(1);
     updateTime();
+    updateCountdown();
     setInterval(updateTime, 1000);
+    setInterval(updateCountdown, 60000);
     setInterval(updatePlaceStatuses, 60000);
     setupModalEvents();
 });
+
+// Countdown to trip
+function updateCountdown() {
+    const tripDate = new Date('2026-04-10T00:00:00');
+    const now = new Date();
+    const diff = tripDate - now;
+
+    if (diff > 0) {
+        const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+        const countdownEl = document.getElementById('countdown');
+        if (countdownEl) {
+            countdownEl.textContent = `🎉 อีก ${days} วัน!`;
+        }
+    }
+}
 
 // Load places data
 async function loadPlaces() {
