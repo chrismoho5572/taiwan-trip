@@ -185,6 +185,87 @@ function initScrollAnimations() {
     });
 }
 
+// ========== PACKING LIST CHECKBOXES ==========
+function initPackingCheckboxes() {
+    // Load saved checkboxes from localStorage
+    const checkboxes = document.querySelectorAll('.packing-checkbox');
+
+    checkboxes.forEach((checkbox, index) => {
+        // Load saved state
+        const savedState = localStorage.getItem(`packing-item-${index}`);
+        if (savedState === 'true') {
+            checkbox.checked = true;
+        }
+
+        // Add event listener
+        checkbox.addEventListener('change', function() {
+            // Save to localStorage
+            localStorage.setItem(`packing-item-${index}`, this.checked);
+
+            // Show feedback
+            if (this.checked) {
+                showPackingFeedback('✅ เช็คแล้ว!');
+            } else {
+                showPackingFeedback('⬜ ยกเลิกเช็ค');
+            }
+        });
+    });
+}
+
+function showPackingFeedback(message) {
+    // Create feedback element
+    const feedback = document.createElement('div');
+    feedback.textContent = message;
+    feedback.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 15px 25px;
+        border-radius: 50px;
+        box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);
+        z-index: 10000;
+        font-weight: 600;
+        animation: slideInRight 0.3s ease;
+    `;
+
+    document.body.appendChild(feedback);
+
+    // Remove after 2 seconds
+    setTimeout(() => {
+        feedback.style.animation = 'slideOutRight 0.3s ease';
+        setTimeout(() => feedback.remove(), 300);
+    }, 2000);
+}
+
+// Add animations to CSS
+const packingStyle = document.createElement('style');
+packingStyle.textContent = `
+    @keyframes slideInRight {
+        from {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideOutRight {
+        from {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        to {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+    }
+`;
+document.head.appendChild(packingStyle);
+
 // ========== INTERACTIVE WISHES ==========
 function showWish(wishText) {
     const wishDisplay = document.getElementById('wish-display');
@@ -236,6 +317,7 @@ document.head.appendChild(style);
 // ========== INITIALIZE ==========
 document.addEventListener('DOMContentLoaded', () => {
     createStars(); // Your Name Theme - Twinkling Stars
+    initPackingCheckboxes(); // Packing List Checkboxes
     loadPlaces();
     updateCountdown();
     setInterval(updateCountdown, 60000);
@@ -244,3 +326,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log('💕 การเดินทางของคริสต์และเมย์ - Your Name Theme');
     console.log('🌟 จดจำไปตลอดชีวิต!');
+    console.log('📋 Packing List Ready!');
+});
