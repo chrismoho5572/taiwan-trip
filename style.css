@@ -22,6 +22,77 @@ body {
     line-height: 1.8;
 }
 
+/* ========== YOUR NAME THEME ========== */
+/* Shooting Stars Animation */
+.shooting-star {
+    position: fixed;
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, #fff, transparent);
+    opacity: 0;
+    animation: shoot 3s ease-in-out infinite;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.shooting-star:nth-child(1) {
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.shooting-star:nth-child(2) {
+    top: 30%;
+    left: 60%;
+    animation-delay: 1.5s;
+}
+
+.shooting-star:nth-child(3) {
+    top: 50%;
+    left: 40%;
+    animation-delay: 3s;
+}
+
+@keyframes shoot {
+    0% {
+        transform: translateX(0) translateY(0) rotate(-45deg);
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(500px) translateY(500px) rotate(-45deg);
+        opacity: 0;
+    }
+}
+
+/* Twinkling Stars Background */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    background: transparent;
+}
+
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 2s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
 /* ========== DECORATIVE STICKERS ========== */
 .floating-stickers {
     position: fixed;
@@ -100,7 +171,7 @@ body {
 /* ========== HERO SECTION ========== */
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, var(--coral) 0%, #FF8E8E 50%, var(--gold) 100%);
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 25%, #ffecd2 50%, #fcb69f 75%, #ee9ca7 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1105,6 +1176,57 @@ body {
     font-size: 0.95rem;
     color: #666;
     font-style: italic;
+}
+
+/* ========== MUSIC PLAYER SECTION ========== */
+.music-player {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.music-player::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.3;
+}
+
+.music-player h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.music-player p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.music-container {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.youtube-player {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
 }
 
 /* ========== CTA SECTION ========== */

@@ -1,5 +1,25 @@
 // 🌿 การเดินทางของคริสต์และเมย์ - App Logic
 
+// ========== YOUR NAME THEME - TWINKLING STARS ==========
+// Create random twinkling stars
+function createStars() {
+    const starsContainer = document.getElementById('stars-container');
+    if (!starsContainer) return;
+
+    const numberOfStars = 100;
+
+    for (let i = 0; i < numberOfStars; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+        star.style.animationDelay = Math.random() * 2 + 's';
+        star.style.width = (Math.random() * 2 + 1) + 'px';
+        star.style.height = star.style.width;
+        starsContainer.appendChild(star);
+    }
+}
+
 // ========== PLACES DATA ==========
 let placesData = [];
 
@@ -167,11 +187,12 @@ function initScrollAnimations() {
 
 // ========== INITIALIZE ==========
 document.addEventListener('DOMContentLoaded', () => {
+    createStars(); // Your Name Theme - Twinkling Stars
     loadPlaces();
     updateCountdown();
     setInterval(updateCountdown, 60000);
 
     setTimeout(initScrollAnimations, 100);
 
-    console.log('💕 การเดินทางของคริสต์และเมย์');
+    console.log('💕 การเดินทางของคริสต์และเมย์ - Your Name Theme');
 });
