@@ -1,27 +1,31 @@
 /* 🌿 การเดินทางของคริสต์และเมย์ - Magazine Style */
 
 :root {
-    /* Your Name Theme Colors - Night Sky */
-    --night-deep: #0f0c29;
-    --night-purple: #302b63;
-    --night-twilight: #24243e;
-    
-    /* Your Name Theme Colors - Sunset */
+    /* Your Name Sunset Theme - Brighter & Warmer */
     --sunset-pink: #ff9a9e;
     --sunset-peach: #fecfef;
     --sunset-orange: #fcb69f;
-    
-    /* Your Name Theme Colors - Stars */
-    --star-gold: #ffd700;
-    --star-white: #ffffff;
-    --comet-yellow: #fffacd;
-    
-    /* Legacy colors (keep for compatibility) */
-    --coral: #ff6b6b;
-    --cream: #fff8f0;
-    --gold: #ffb84d;
+    --sunset-coral: #ff6b6b;
+    --sunset-gold: #ffd700;
+    --sunset-cream: #fff8f0;
+
+    /* Soft Day Colors */
+    --day-light-pink: #ffe4e1;
+    --day-soft-peach: #fff0e6;
+    --day-white: #ffffff;
+
+    /* Accent Colors */
+    --accent-purple: #667eea;
+    --accent-rose: #f093fb;
+
+    /* Text Colors */
     --charcoal: #2d2d2d;
     --soft-gray: #f5f0eb;
+
+    /* Legacy (keep for compatibility) */
+    --coral: #ff6b6b;
+    --cream: #fff8f0;
+    --gold: #ffd700;
     --accent: #ff8a5b;
 }
 
@@ -34,9 +38,9 @@
 body {
     font-family: 'Sarabun', sans-serif;
     background: linear-gradient(180deg,
-        var(--night-deep) 0%,
-        var(--night-purple) 50%,
-        var(--cream) 100%
+        var(--day-soft-peach) 0%,
+        var(--cream) 30%,
+        var(--day-white) 100%
     );
     background-attachment: fixed;
     color: var(--charcoal);
@@ -194,12 +198,14 @@ body {
 .hero {
     min-height: 100vh;
     background: linear-gradient(135deg,
-        var(--night-deep) 0%,
-        var(--night-purple) 50%,
-        var(--night-twilight) 100%
+        var(--sunset-pink) 0%,
+        var(--sunset-peach) 25%,
+        var(--sunset-orange) 50%,
+        var(--sunset-coral) 75%,
+        var(--sunset-gold) 100%
     );
     background-size: 200% 200%;
-    animation: nightShift 15s ease infinite;
+    animation: sunsetShift 15s ease infinite;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,7 +215,7 @@ body {
     overflow: hidden;
 }
 
-@keyframes nightShift {
+@keyframes sunsetShift {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
