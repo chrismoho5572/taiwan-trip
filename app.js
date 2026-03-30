@@ -20,13 +20,31 @@ function renderPlaces() {
     container.innerHTML = placesData.map(place => `
         <div class="place-card" data-day="${place.day}">
             <div class="place-image">
-                <img src="${place.image}" alt="${place.name}" loading="lazy">
+                <img src="${place.image}" alt="${place.name}" loading="lazy" onerror="this.src='https://via.placeholder.com/680x510?text=Image+Not+Available'">
                 <span class="place-day-badge">Day ${place.day}</span>
+                ${place.may_rating ? `<span class="may-rating-badge">${place.may_rating}</span>` : ''}
             </div>
             <div class="place-content">
                 <h3 class="place-name">${place.name}</h3>
                 <p class="place-name-th">${place.name_th}</p>
                 <p class="place-desc">${place.description}</p>
+
+                ${place.accessibility ? `
+                <div class="accessibility-info">
+                    <div class="access-item">
+                        <span class="access-icon">🚇</span>
+                        <span class="access-text">${place.accessibility.mrt}</span>
+                    </div>
+                    <div class="access-item">
+                        <span class="access-icon">🚶</span>
+                        <span class="access-text">${place.accessibility.walking}</span>
+                    </div>
+                    <div class="access-item">
+                        <span class="access-icon">✅</span>
+                        <span class="access-text">${place.accessibility.difficulty}</span>
+                    </div>
+                </div>
+                ` : ''}
 
                 ${place.google_maps ? `
                 <div class="place-info">
@@ -54,9 +72,20 @@ function renderPlaces() {
                     <h4>🍴 Recommended</h4>
                     ${place.restaurants.map(r => `
                         <div class="restaurant-item">
-                            <span class="restaurant-name">${r.name}</span>
-                            <span class="restaurant-type">${r.type}</span>
-                            ${r.price ? `<span class="restaurant-price">${r.price}</span>` : ''}
+                            <div class="restaurant-header">
+                                <span class="restaurant-name">${r.name}</span>
+                                ${r.highlight ? `<span class="restaurant-highlight">${r.highlight}</span>` : ''}
+                            </div>
+                            <div class="restaurant-details">
+                                <span class="restaurant-type">${r.type}</span>
+                                ${r.price ? `<span class="restaurant-price">${r.price}</span>` : ''}
+                                ${r.hours ? `<span class="restaurant-hours">⏰ ${r.hours}</span>` : ''}
+                            </div>
+                            <div class="restaurant-links">
+                                ${r.google_maps ? `<a href="${r.google_maps}" target="_blank" class="restaurant-link">📍 Maps</a>` : ''}
+                                ${r.website ? `<a href="${r.website}" target="_blank" class="restaurant-link">🌐 เว็บไซต์</a>` : ''}
+                                ${r.instagram ? `<a href="${r.instagram}" target="_blank" class="restaurant-link">📸 Instagram</a>` : ''}
+                            </div>
                         </div>
                     `).join('')}
                 </div>
@@ -73,15 +102,18 @@ function renderPlaces() {
                                 ${spot.best_time ? `<span class="spot-time">🕐 ${spot.best_time}</span>` : ''}
                                 ${spot.hours ? `<span class="spot-hours">⏰ ${spot.hours}</span>` : ''}
                                 ${spot.tip ? `<span class="spot-extra">💡 ${spot.tip}</span>` : ''}
+                                ${spot.difficulty ? `<span class="spot-difficulty">🚶 ${spot.difficulty}</span>` : ''}
                             </div>
                         </div>
                     `).join('')}
                 </div>
                 ` : ''}
 
+                ${place.checkin_tip ? `
                 <div class="checkin-tip">
                     💡 ${place.checkin_tip}
                 </div>
+                ` : ''}
             </div>
         </div>
     `).join('');
