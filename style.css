@@ -1219,6 +1219,202 @@ body {
     font-style: italic;
 }
 
+/* ========== LOVE STORY TIMELINE ========== */
+.love-story {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, var(--night-twilight) 0%, var(--cream) 30%);
+}
+
+.timeline {
+    position: relative;
+    margin-top: 60px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--star-gold), var(--sunset-pink), var(--sunset-orange));
+    opacity: 0.5;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.timeline-marker {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--star-gold), var(--sunset-pink));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 40px rgba(255, 215, 0, 0.3);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.timeline-content {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    max-width: 350px;
+    margin-left: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.timeline-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--night-purple);
+}
+
+.timeline-content p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.timeline-content .highlight {
+    margin-top: 15px;
+    color: var(--sunset-pink);
+    font-weight: 600;
+}
+
+/* ========== INTERACTIVE WISHES ========== */
+.wishes-section {
+    padding: 80px 20px;
+    background: linear-gradient(180deg, var(--cream) 0%, var(--night-twilight) 100%);
+    text-align: center;
+}
+
+.wishes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.wish-star {
+    font-size: 4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: twinkle 2s ease-in-out infinite;
+    user-select: none;
+}
+
+.wish-star:hover {
+    transform: scale(1.3) rotate(15deg);
+    filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.8));
+}
+
+.wish-display {
+    margin-top: 50px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+    animation: fadeInUp 0.5s ease;
+}
+
+.wish-display p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--night-purple);
+    font-weight: 600;
+}
+
+/* ========== STAR MESSAGE ========== */
+.star-message {
+    padding: 80px 20px;
+    background: var(--night-deep);
+    text-align: center;
+}
+
+.star-letter {
+    max-width: 600px;
+    margin: 40px auto 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 30px;
+    padding: 50px;
+    box-shadow: 0 20px 60px rgba(255, 215, 0, 0.2);
+}
+
+.letter-content {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--star-white);
+    line-height: 1.8;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+/* ========== ENHANCED HERO ========== */
+.couple-names {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-weight: 700;
+    color: var(--star-white);
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-shadow: 
+        0 0 20px rgba(255, 215, 0, 0.5),
+        0 0 40px rgba(255, 215, 0, 0.3),
+        0 0 60px rgba(255, 215, 0, 0.2);
+    animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 
+            0 0 20px rgba(255, 215, 0, 0.5),
+            0 0 40px rgba(255, 215, 0, 0.3);
+    }
+    50% {
+        text-shadow: 
+            0 0 30px rgba(255, 215, 0, 0.8),
+            0 0 60px rgba(255, 215, 0, 0.5),
+            0 0 90px rgba(255, 215, 0, 0.3);
+    }
+}
+
+.ampersand {
+    font-size: 0.6em;
+    margin: 0 20px;
+    color: var(--star-gold);
+    animation: spin 10s linear infinite;
+    display: inline-block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 /* ========== MUSIC PLAYER SECTION ========== */
 .music-player {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);

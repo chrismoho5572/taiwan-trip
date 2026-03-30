@@ -185,6 +185,54 @@ function initScrollAnimations() {
     });
 }
 
+// ========== INTERACTIVE WISHES ==========
+function showWish(wishText) {
+    const wishDisplay = document.getElementById('wish-display');
+    if (!wishDisplay) return;
+
+    wishDisplay.innerHTML = `<p>✨ ${wishText} ✨</p>`;
+    wishDisplay.style.animation = 'none';
+    wishDisplay.offsetHeight; // Trigger reflow
+    wishDisplay.style.animation = 'fadeInUp 0.5s ease';
+
+    // Add sparkle effect
+    createSparkles(wishDisplay);
+}
+
+function createSparkles(element) {
+    const rect = element.getBoundingClientRect();
+    for (let i = 0; i < 10; i++) {
+        const sparkle = document.createElement('div');
+        sparkle.innerHTML = '✨';
+        sparkle.style.position = 'fixed';
+        sparkle.style.left = (rect.left + Math.random() * rect.width) + 'px';
+        sparkle.style.top = (rect.top + Math.random() * rect.height) + 'px';
+        sparkle.style.pointerEvents = 'none';
+        sparkle.style.fontSize = (Math.random() * 20 + 10) + 'px';
+        sparkle.style.animation = 'sparkle 1s ease-out forwards';
+        sparkle.style.zIndex = '9999';
+        document.body.appendChild(sparkle);
+
+        setTimeout(() => sparkle.remove(), 1000);
+    }
+}
+
+// Add sparkle animation to CSS
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes sparkle {
+        0% {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+        100% {
+            opacity: 0;
+            transform: scale(0) translateY(-50px);
+        }
+    }
+`;
+document.head.appendChild(style);
+
 // ========== INITIALIZE ==========
 document.addEventListener('DOMContentLoaded', () => {
     createStars(); // Your Name Theme - Twinkling Stars
@@ -195,4 +243,4 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(initScrollAnimations, 100);
 
     console.log('💕 การเดินทางของคริสต์และเมย์ - Your Name Theme');
-});
+    console.log('🌟 จดจำไปตลอดชีวิต!');
