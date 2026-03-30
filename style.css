@@ -892,6 +892,151 @@ body {
     margin-top: 4px;
 }
 
+/* ========== SHOPPING SECTION ========== */
+.shopping {
+    padding: 80px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.shopping-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.shopping-item {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.shopping-item:hover {
+    transform: translateY(-5px);
+}
+
+.shopping-icon {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.shopping-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--charcoal);
+    text-align: center;
+}
+
+.shopping-desc {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.shopping-brands {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.brand-item {
+    background: var(--soft-gray);
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.brand-name {
+    font-weight: 600;
+    color: var(--charcoal);
+    font-size: 0.95rem;
+}
+
+.brand-highlight {
+    background: linear-gradient(135deg, var(--coral), var(--gold));
+    color: white;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-block;
+    width: fit-content;
+}
+
+.brand-price {
+    font-size: 0.9rem;
+    color: var(--coral);
+    font-weight: 600;
+}
+
+.brand-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.brand-links a {
+    font-size: 0.8rem;
+    color: white;
+    background: var(--coral);
+    padding: 5px 12px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.brand-links a:hover {
+    background: var(--gold);
+}
+
+.shopping-tip {
+    background: #e8f5e9;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #2e7d32;
+    line-height: 1.5;
+}
+
+.shopping-tips-box {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.shopping-tips-box h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--charcoal);
+}
+
+.shopping-tips-box ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.shopping-tips-box li {
+    padding: 10px;
+    background: var(--soft-gray);
+    border-radius: 10px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
 /* ========== CTA SECTION ========== */
 .cta {
     text-align: center;
