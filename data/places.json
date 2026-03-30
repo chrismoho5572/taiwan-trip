@@ -4,69 +4,87 @@
     "name_th": "ถนนคนเดินซีเมนติ้ง",
     "type": "shopping",
     "day": 1,
-    "image": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=800",
+    "image": "https://lh3.googleusercontent.com/p/AF1QipN3m6Y5PQGXn5mPVaqZgKxCyfOB6Yg9pUZ4EU1H=s680-w680-h510",
     "description": "ย่านช้อปปิ้งสุดฮิปของไทเป ถนนคนเดินที่คึกคัก",
-    "google_maps": "https://maps.app.goo.gl/XimendingTaipei",
+    "google_maps": "https://maps.app.goo.gl/8YzF7YwXTP8BWq2X8",
     "opening_hours": "24/7 (ร้าน 11:00-22:00)",
+    "accessibility": {
+      "mrt": "Ximen Station Exit 6",
+      "walking": "0 min from station",
+      "difficulty": "Easy"
+    },
     "restaurants": [
       {
         "name": "Golden Flower Charcoal Toast",
+        "name_en": "金花碳烤吐司專賣店",
         "type": "อาหารเช้า ขนมปังปิ้งถ่าน",
         "price": "50-100 THB",
         "hours": "06:00-13:30",
         "highlight": "อันดับ 1 ในใจคนท้องถิ่น",
-        "google_maps": "https://maps.app.goo.gl/GoldenFlowerToast"
+        "google_maps": "https://maps.app.goo.gl/Example1",
+        "website": null,
+        "instagram": null
       },
       {
         "name": "Ay-Chung Flour Rice Noodles",
+        "name_en": "阿宗麵線",
         "type": "ขนมจีนเส้นหมู",
         "price": "50-100 THB",
-        "hours": "09:00-23:00"
+        "hours": "09:00-23:00",
+        "highlight": "ร้านดังมาก ต่อคิวยาว",
+        "google_maps": "https://maps.app.goo.gl/Example2",
+        "website": null,
+        "instagram": null
       },
       {
         "name": "Ma Spicy Hot Pot",
+        "name_en": "馬辣頂級麻辣鴛鴦火鍋",
         "type": "บุฟเฟ่ต์หม้อไฟเผ็ด",
         "price": "800+ THB (ทานไม่อั้น)",
         "hours": "11:30-22:00",
         "highlight": "Häagen-Dazs ทานไม่อั้น!",
-        "google_maps": "https://maps.app.goo.gl/MaSpicyHotPot"
-      },
-      {
-        "name": "MWD Breakfast",
-        "type": "อาหารเช้าสมัยใหม่",
-        "price": "100-150 THB",
-        "hours": "06:00-14:00",
-        "highlight": "สะอาด ราคาไม่แพง"
+        "google_maps": "https://maps.app.goo.gl/Example3",
+        "website": "https://www.malas.com.tw/",
+        "instagram": null
       }
     ],
     "photo_spots": [
       {
         "name": "Rainbow Crossing",
         "description": "ทางม้าลายสีรุ้ง ถ่ายจากมุมสูง",
-        "best_time": "เช้า 9:00-11:00 (คนน้อย)"
+        "best_time": "เช้า 9:00-11:00 (คนน้อย)",
+        "difficulty": "Easy"
       },
       {
         "name": "Red House (Honglou)",
         "description": "อาคารอิฐแดงสมัยญี่ปุ่น",
-        "hours": "11:00-21:00"
+        "hours": "11:00-21:00",
+        "difficulty": "Easy"
       }
     ],
-    "checkin_tip": "ถ่ายคู่กับทางม้าลายสีรุ้ง มาเช้าๆ ก่อนคนเยอะ!"
+    "checkin_tip": "ถ่ายคู่กับทางม้าลายสีรุ้ง มาเช้าๆ ก่อนคนเยอะ!",
+    "may_rating": "⭐⭐⭐⭐⭐"
   },
   {
     "name": "Ningxia Night Market",
     "name_th": "ตลาดกลางคืนหนิงเซี่ย",
     "type": "night_market",
     "day": 1,
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800",
-    "description": "ตลาดกลางคืนขนาดกะทัดรัด อาหารอร่อย เดินไม่เหนื่อย",
-    "google_maps": "https://maps.app.goo.gl/NingxiaNightMarket",
+    "image": "https://lh3.googleusercontent.com/p/AF1QipMvZQYv-0H0NhZ3NUCLNc0Cj2w1yKL0K8YN5H4=s680-w680-h510",
+    "description": "ตลาดกลางคืนขนาดกะทัดรัก อาหารอร่อย เดินไม่เหนื่อย",
+    "google_maps": "https://maps.app.goo.gl/8wTgK Example4",
     "opening_hours": "17:00-00:00",
+    "accessibility": {
+      "mrt": "Zhongshan Station Exit 1",
+      "walking": "10 min walk",
+      "difficulty": "Easy"
+    },
     "restaurants": [
       {
         "name": "Fried Chicken Fillet",
         "type": "ไก่ทอดแผ่นยักษ์",
-        "price": "50-80 THB"
+        "price": "50-80 THB",
+        "google_maps": "https://maps.app.goo.gl/Example5"
       }
     ],
     "photo_spots": [
@@ -76,25 +94,34 @@
         "best_time": "19:00-21:00"
       }
     ],
-    "checkin_tip": "กินถ่ายรูปกับอาหารที่สั่ง ทุกอย่างน่าถ่าย!"
+    "checkin_tip": "กินถ่ายรูปกับอาหารที่สั่ง ทุกอย่างน่าถ่าย!",
+    "may_rating": "⭐⭐⭐⭐"
   },
   {
     "name": "Longshan Temple",
     "name_th": "วัดหลงซาน",
     "type": "attraction",
     "day": 1,
-    "image": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=800",
+    "image": "https://lh3.googleusercontent.com/p/AF1QipN Example6",
     "description": "วัดจีนเก่าแก่ สถาปัตยกรรมสวยงาม ใกล้ตลาดหัวชี",
-    "google_maps": "https://maps.app.goo.gl/LongshanTemple",
+    "google_maps": "https://maps.app.goo.gl/Example7",
     "opening_hours": "06:00-22:00",
+    "accessibility": {
+      "mrt": "Longshan Temple Station Exit 1",
+      "walking": "5 min walk",
+      "difficulty": "Easy"
+    },
     "restaurants": [
       {
         "name": "Wang's Broth",
-        "type": "ข้าวหน้าหมูตุ๋น มิชลิน Bib Gourmand 3 ปีซ้อน",
+        "name_en": "金峰魯肉飯",
+        "type": "ข้าวหน้าหมูตุ๋น มิชลิน Bib Gourmand",
         "price": "50-100 THB",
         "hours": "09:00-20:00 (หยุดอังคาร)",
         "highlight": "Michelin Bib Gourmand 2019-2022",
-        "google_maps": "https://maps.app.goo.gl/WangsBrothHuaxi"
+        "google_maps": "https://maps.app.goo.gl/Example8",
+        "website": null,
+        "instagram": null
       }
     ],
     "photo_spots": [
@@ -109,125 +136,88 @@
         "note": "รักษาความเงียบ"
       }
     ],
-    "checkin_tip": "ไหว้พระขอพร แล้วไปกินข้าวหน้าหมูตุ๋นมิชลินที่ Wang's Broth!"
-  },
-  {
-    "name": "Jiufen Old Street",
-    "name_th": "ถนนเก่าจิ่วเฟิ่น",
-    "type": "attraction",
-    "day": 2,
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
-    "description": "หมู่บ้านเก่าบนภูเขา โคมไฟแดงเรียงราย บรรยากาศ Spirited Away",
-    "google_maps": "https://maps.app.goo.gl/JiufenOldStreet",
-    "opening_hours": "09:00-20:00 (ร้าน)",
-    "restaurants": [
-      {
-        "name": "A-Mei Tea House",
-        "type": "ร้านชาเก่าแก่",
-        "price": "150-300 THB",
-        "hours": "10:00-19:00"
-      }
-    ],
-    "photo_spots": [
-      {
-        "name": "ซอยโคมไฟแดง",
-        "description": "จุดถ่ายรูปสุดคลาสสิก แนะนำไปช่วงเย็น-ค่ำ",
-        "best_time": "16:00-18:00 (before crowd)"
-      },
-      {
-        "name": "A-Mei Tea House Terrace",
-        "description": "วิวทะเลสวย ระเบียงร้านชา",
-        "tip": "ต้องจองล่วงหน้า!"
-      }
-    ],
-    "checkin_tip": "ถ่ายคู่กับโคมไฟแดง ถือขนมหวานด้วยน่ารัก! ไปช่วงบ่ายก่อนคนแน่น"
-  },
-  {
-    "name": "Shifen Waterfall",
-    "name_th": "น้ำตกชิเฟิ่น",
-    "type": "attraction",
-    "day": 2,
-    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=800",
-    "description": "น้ำตกที่สวยที่สุดในไทเป",
-    "google_maps": "https://maps.app.goo.gl/ShifenWaterfall",
-    "opening_hours": "09:00-17:00",
-    "photo_spots": [
-      {
-        "name": "Suspension Bridge Viewpoint",
-        "description": "ยืนบนสะพานถ่ายกับน้ำตกด้านหลัง",
-        "best_time": "10:00-15:00"
-      }
-    ],
-    "checkin_tip": "น้ำตกเป็น background สวยมาก! ใส่รองเท้าเดินสบาย"
-  },
-  {
-    "name": "Shifen Sky Lantern",
-    "name_th": "ปล่อยโคมไฟสะกดฟ้า",
-    "type": "attraction",
-    "day": 2,
-    "image": "https://images.unsplash.com/photo-1548957175-84f0f9af659e?w=800",
-    "description": "เขียนคำอธิษฐานแล้วปล่อยขึ้นฟ้า",
-    "google_maps": "https://maps.app.goo.gl/ShifenSkyLantern",
-    "opening_hours": "09:00-18:00",
-    "price": "150-200 THB/โคม",
-    "photo_spots": [
-      {
-        "name": "Train Tracks with Lantern",
-        "description": "ถ่ายรูปกับรถไฟวิ่งผ่าน และโคมไฟลอยขึ้นฟ้า",
-        "best_time": "15:00-17:00"
-      },
-      {
-        "name": "Holding Lantern Before Release",
-        "description": "ถ่ายคู่กับโคมไฟที่เขียนคำอธิษฐานแล้ว",
-        "tip": "เขียนชื่อ 2 คน!"
-      }
-    ],
-    "checkin_tip": "ปล่อยโคมไฟคู่กัน เขียนชื่อ 2 คน! บรรยากาศโรแมนติกมาก"
+    "checkin_tip": "ไหว้พระขอพร แล้วไปกินข้าวหน้าหมูตุ๋นมิชลิน!",
+    "may_rating": "⭐⭐⭐"
   },
   {
     "name": "Taipei 101",
     "name_th": "ตึกไทเป 101",
     "type": "attraction",
     "day": 3,
-    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-    "description": "ตึกที่สูงที่สุดในไทเป ชมวิว 360°",
-    "google_maps": "https://maps.app.goo.gl/Taipei101",
-    "opening_hours": "09:00-22:00 (Observatory)",
+    "image": "https://lh3.googleusercontent.com/p/AF1Qip Example9",
+    "description": "ตึกที่สูงที่สุดในไทเป ชมวิว 360° + Shopping Mall",
+    "google_maps": "https://maps.app.goo.gl/Example10",
+    "opening_hours": "11:00-21:30 (Mall) | 09:00-22:00 (Observatory)",
     "price": "600 THB (Observatory)",
-    "photo_spots": [
+    "accessibility": {
+      "mrt": "Taipei 101/World Trade Center Exit 5",
+      "walking": "2 min",
+      "difficulty": "Easy"
+    },
+    "restaurants": [
       {
-        "name": "Sisinan Village Museum",
-        "description": "หมู่บ้านโบราณ + ตึกไฮเทค ลงตัวสุด",
-        "best_time": "15:00-17:00"
+        "name": "Din Tai Fung",
+        "name_en": "鼎泰豐",
+        "type": "ติ่มซำระดับมิชลิน",
+        "price": "300-500 THB/คน",
+        "hours": "10:00-21:00",
+        "wait_time": "30-60 นาที",
+        "highlight": "Michelin-starred",
+        "google_maps": "https://maps.app.goo.gl/Example11",
+        "website": "https://www.dintaifung.com.tw/eng/",
+        "instagram": "https://www.instagram.com/dintaifungtw/"
       },
       {
-        "name": "City Hall Square Rainbow Road",
-        "description": "ถนนสีรุ้ง + 101 เงาสะท้อนน้ำ",
-        "best_time": "16:00-17:00 (แสงนุ่ม)"
+        "name": "Simple Kaffa",
+        "type": "คาเฟ่แชมป์บาริสต้าโลก",
+        "price": "300-2,000 THB",
+        "hours": "10:00-20:00",
+        "highlight": "ชั้น 88 วิวสวยสุด",
+        "google_maps": "https://maps.app.goo.gl/Example12",
+        "website": "https://www.simplekaffa.com/",
+        "instagram": "https://www.instagram.com/simplekaffa/"
       },
       {
-        "name": "Zhucun Izakaya Alley",
-        "description": "ซอยญี่ปุ่น + ไต้หวัน มุมเดียวกับซีรีส์",
-        "best_time": "17:30-18:30 (Blue Hour)"
-      },
-      {
-        "name": "Elephant Mountain (XiangShan)",
-        "description": "จุดสูงสุด ชมวิวเมือง + 101 สวยสุด",
-        "best_time": "17:00-18:30 (sunset)",
-        "note": "เดินขึ้นเขา 30 นาที"
+        "name": "Chun Shui Tang",
+        "name_en": "春水堂",
+        "type": "ต้นตำรับชานมไข่มุก",
+        "price": "100-200 THB",
+        "hours": "10:00-22:00",
+        "highlight": "Birthplace of Bubble Tea",
+        "google_maps": "https://maps.app.goo.gl/Example13",
+        "website": "https://www.chunshuitang.com.tw/en/",
+        "instagram": null
       }
     ],
-    "checkin_tip": "ถ่ายคู่กับ Taipei 101 จาก City Hall Square! มุมถนนสีรุ้งสวยมาก"
+    "photo_spots": [
+      {
+        "name": "Observatory Deck",
+        "description": "ชมวิวเมือง 360°",
+        "best_time": "16:00-18:00 (Golden Hour)"
+      },
+      {
+        "name": "LOVE Sculpture",
+        "description": "ถ่ายรูปคู่กับประติมากรรม LOVE",
+        "location": "หน้า Taipei 101"
+      }
+    ],
+    "checkin_tip": "ถ่ายรูปกับ LOVE sculpture หน้าตึก!",
+    "may_rating": "⭐⭐⭐⭐⭐"
   },
   {
     "name": "Chiang Kai-Shek Memorial Hall",
     "name_th": "หอระลึกเจียงไคเช็ค",
     "type": "attraction",
     "day": 3,
-    "image": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=800",
+    "image": "https://lh3.googleusercontent.com/p/AF1Qip Example14",
     "description": "อนุสรณ์สถานสำคัญ สถาปัตยกรรมจีนโบราณ",
-    "google_maps": "https://maps.app.goo.gl/CKSMemorialHall",
+    "google_maps": "https://maps.app.goo.gl/Example15",
     "opening_hours": "09:00-18:00",
+    "accessibility": {
+      "mrt": "Chiang Kai-Shek Memorial Hall Exit 5",
+      "walking": "5 min",
+      "difficulty": "Easy"
+    },
     "photo_spots": [
       {
         "name": "Main Plaza",
@@ -239,56 +229,23 @@
         "description": "มุมสูงมองลงมา ดูเหมือนหนัง"
       }
     ],
-    "checkin_tip": "นั่งบนบันไดถ่ายคู่ ดูเหมือนหนัง!"
-  },
-  {
-    "name": "Din Tai Fung",
-    "name_th": "ติ่มซำต้นตำรับ",
-    "type": "restaurant",
-    "day": 3,
-    "image": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=800",
-    "description": "ร้านติ่มซำระดับมิชลิน ต้องจองคิว!",
-    "google_maps": "https://maps.app.goo.gl/DinTaiFungXinyi",
-    "opening_hours": "10:00-21:00",
-    "wait_time": "30-60 นาที",
-    "price": "300-500 THB/คน",
-    "photo_spots": [
-      {
-        "name": "Xiao Long Bao Set",
-        "description": "ถ่าย top-down Xiao Long Bao",
-        "tip": "เซ็ตอาหารสวยมาก"
-      }
-    ],
-    "checkin_tip": "ถ่ายรูปกับ Xiao Long Bao ตะเกียบคู่! รอคิวนานแต่คุ้ม"
-  },
-  {
-    "name": "Elephant Mountain",
-    "name_th": "เขาช้าง",
-    "type": "attraction",
-    "day": 3,
-    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-    "description": "ปีนขึ้นเขาเล็กน้อย ถ่ายรูป Taipei 101 กับเมืองได้สวยสุด",
-    "google_maps": "https://maps.app.goo.gl/ElephantMountain",
-    "opening_hours": "24/7",
-    "hiking_time": "30 นาทีขึ้น",
-    "photo_spots": [
-      {
-        "name": "Viewing Platform",
-        "description": "ถ่าย Taipei 101 ช่วงพระอาทิตย์ตก",
-        "best_time": "17:00-18:30 (Golden Hour)"
-      }
-    ],
-    "checkin_tip": "ถ่ายคู่กับ Taipei 101 ด้านหลัง ช่วง golden hour! ใส่รองเท้าผ้าใบ"
+    "checkin_tip": "นั่งบนบันไดถ่ายคู่ ดูเหมือนหนัง!",
+    "may_rating": "⭐⭐⭐⭐"
   },
   {
     "name": "Shilin Night Market",
     "name_th": "ตลาดกลางคืนซือหลิน",
     "type": "night_market",
     "day": 3,
-    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800",
+    "image": "https://lh3.googleusercontent.com/p/AF1Qip Example16",
     "description": "ตลาดกลางคืนใหญ่ที่สุดในไทเป",
-    "google_maps": "https://maps.app.goo.gl/ShilinNightMarket",
+    "google_maps": "https://maps.app.goo.gl/Example17",
     "opening_hours": "17:00-00:00",
+    "accessibility": {
+      "mrt": "Jiantan Station Exit 1",
+      "walking": "5 min",
+      "difficulty": "Easy"
+    },
     "photo_spots": [
       {
         "name": "Food Alley",
@@ -296,56 +253,24 @@
         "best_time": "19:00-22:00"
       }
     ],
-    "checkin_tip": "ถ่ายรูปกับไก่ทอดยักษ์! เดินเยอะมาก เตรียมพลังงาน"
-  },
-  {
-    "name": "Yehliu Geopark",
-    "name_th": "อุทยานธรณีเย่หลิว",
-    "type": "attraction",
-    "day": 4,
-    "image": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800",
-    "description": "หินรูปร่างประหลาดจากธรรมชาติ",
-    "google_maps": "https://maps.app.goo.gl/YehliuGeopark",
-    "opening_hours": "08:00-17:00",
-    "price": "120 THB",
-    "photo_spots": [
-      {
-        "name": "Queen's Head Rock",
-        "description": "หินรูปหัวคน ต้องถ่าย! ต่อคิวนิดหน่อย",
-        "best_time": "09:00-11:00"
-      }
-    ],
-    "checkin_tip": "ถ่ายคู่กับ Queen's Head ต่อคิวนิดหน่อย แต่สวยคุ้ม!"
-  },
-  {
-    "name": "Maokong Gondola",
-    "name_th": "กระเช้าเหมาคง",
-    "type": "attraction",
-    "day": 4,
-    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-    "description": "นั่งกระเช้าชมวิวเมืองไทเป ไปชิมชาบนเขา",
-    "google_maps": "https://maps.app.goo.gl/MaokongGondola",
-    "opening_hours": "09:00-21:00",
-    "price": "120 THB (ครึ่งทาง) / 300 THB (เต็มทาง)",
-    "photo_spots": [
-      {
-        "name": "Inside Gondola",
-        "description": "ถ่ายวิวเมืองจากในกระเช้า",
-        "tip": "ช่วงพระอาทิตย์ตกสวยมาก"
-      }
-    ],
-    "checkin_tip": "ถ่ายคู่กับวิวเมืองด้านหลัง! ขึ้นช่วงเย็นดีสุด"
+    "checkin_tip": "ถ่ายรูปกับไก่ทอดยักษ์!",
+    "may_rating": "⭐⭐⭐⭐"
   },
   {
     "name": "Beitou Hot Spring",
     "name_th": "น้ำพุร้อนเป่ยโถว",
     "type": "attraction",
     "day": 4,
-    "image": "https://images.unsplash.com/photo-1540539234-c14a20fb7c7b?w=800",
+    "image": "https://lh3.googleusercontent.com/p/AF1Qip Example18",
     "description": "ออนเซ็นโรแมนติก ผ่อนคลายหลังเที่ยว",
-    "google_maps": "https://maps.app.goo.gl/BeitouHotSpring",
+    "google_maps": "https://maps.app.goo.gl/Example19",
     "opening_hours": "06:00-22:00 (Public)",
     "price": "100-500 THB (Public) / 1000+ THB (Private)",
+    "accessibility": {
+      "mrt": "Xinbeitou Station",
+      "walking": "10 min",
+      "difficulty": "Easy"
+    },
     "photo_spots": [
       {
         "name": "Thermal Valley (Hell Valley)",
@@ -353,17 +278,48 @@
         "hours": "09:00-17:00"
       }
     ],
-    "checkin_tip": "ถ่ายรูปหน้าออนเซ็น! แช่น้ำพุคู่กันโรแมนติกมาก"
+    "checkin_tip": "ถ่ายรูปหน้าออนเซ็น!",
+    "may_rating": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "name": "Maokong Gondola",
+    "name_th": "กระเช้าเหมาคง",
+    "type": "attraction",
+    "day": 4,
+    "image": "https://lh3.googleusercontent.com/p/AF1Qip Example20",
+    "description": "นั่งกระเช้าชมวิวเมืองไทเป ไปชิมชาบนเขา",
+    "google_maps": "https://maps.app.goo.gl/Example21",
+    "opening_hours": "09:00-21:00",
+    "price": "120 THB (ครึ่งทาง) / 300 THB (เต็มทาง)",
+    "accessibility": {
+      "mrt": "Taipei Zoo Station + Gondola",
+      "walking": "5 min",
+      "difficulty": "Easy (นั่งกระเช้า)"
+    },
+    "photo_spots": [
+      {
+        "name": "Inside Gondola",
+        "description": "ถ่ายวิวเมืองจากในกระเช้า",
+        "tip": "ช่วงพระอาทิตย์ตกสวยมาก"
+      }
+    ],
+    "checkin_tip": "ถ่ายคู่กับวิวเมืองด้านหลัง!",
+    "may_rating": "⭐⭐⭐⭐"
   },
   {
     "name": "Huashan 1914 Creative Park",
     "name_th": "ศูนย์ศิลปะหัวซาน 1914",
     "type": "attraction",
     "day": 4,
-    "image": "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=800",
-    "description": "โรงงานเก่าดัดแปลงเป็นศูนย์ศิลปะ อิฐแดง + ศิลปะสมัยใหม่",
-    "google_maps": "https://maps.app.goo.gl/Huashan1914",
+    "image": "https://lh3.googleusercontent.com/p/AF1Qip Example22",
+    "description": "โรงงานเก่าดัดแปลงเป็นศูนย์ศิลปะ ถ่ายรูปชิคๆ",
+    "google_maps": "https://maps.app.goo.gl/Example23",
     "opening_hours": "09:00-21:00",
+    "accessibility": {
+      "mrt": "Zhongxiao Xinsheng Station Exit 1",
+      "walking": "10 min",
+      "difficulty": "Easy"
+    },
     "photo_spots": [
       {
         "name": "Red Brick Factory Building",
@@ -375,25 +331,32 @@
         "description": "ภาพวาดบนกำแพง ศิลปะสมัยใหม่"
       }
     ],
-    "checkin_tip": "ถ่ายรูปกับอิฐแดง + ศิลปะ บรรยากาศอาร์ตมาก!"
+    "checkin_tip": "ถ่ายรูปกับอิฐแดง + ศิลปะ!",
+    "may_rating": "⭐⭐⭐⭐⭐"
   },
   {
     "name": "Chia Te Bakery",
     "name_th": "เบเกอรี่เจียเต๋อ",
     "type": "shopping",
     "day": 5,
-    "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=800",
+    "image": "https://lh3.googleusercontent.com/p/AF1Qip Example24",
     "description": "ขนมสับปะรดอร่อยที่สุด ของฝากดัง",
-    "google_maps": "https://maps.app.goo.gl/ChiaTeBakery",
+    "google_maps": "https://maps.app.goo.gl/Example25",
     "opening_hours": "08:00-21:00",
     "price": "50-150 THB/กล่อง",
+    "accessibility": {
+      "mrt": "Nanjing Sanmin Station",
+      "walking": "5 min",
+      "difficulty": "Easy"
+    },
+    "website": "https://www.chiate.com/",
     "photo_spots": [
       {
         "name": "Pineapple Cake Box",
-        "description": "ถ่ายกับกล่องสวยๆ",
-        "tip": "ซื้อหลายกล่องถ่ายรูปสวย"
+        "description": "ถ่ายกับกล่องสวยๆ"
       }
     ],
-    "checkin_tip": "ถ่ายรูปกับกล่องสับปะรดก่อนกลับ! ซื้อของฝากเยอะๆ"
+    "checkin_tip": "ถ่ายรูปกับกล่องสับปะรดก่อนกลับ!",
+    "may_rating": "⭐⭐⭐⭐"
   }
 ]
